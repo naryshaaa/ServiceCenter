@@ -1,0 +1,297 @@
+@charset "utf-8";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/transform";
+@import "susyone";
+@import "_iconfont.scss";
+
+$black: #000;
+$white: #fff;
+$deep-gray: darken($white, 70%);
+$light-gray: lighten($black, 70%);
+$highline: #02988a; //
+$hover: shade($highline, 50%);
+$hover2: tint($highline, 50%);
+$focused: orange;
+$bgColor: #F9F7EF;
+$homebgColor: #fef6ec;
+
+$light-green: #1abc9c;
+$light-orange: #f28e1e;
+
+$brown: #7C6855;
+
+$step-hint: #5bc0de; //
+
+$hfbgColor: #fdeed8; //
+$separator: #b92626;
+$gray-text: #929497;
+
+$header-color-1: #2f3642;
+$header-color-1-revise: #77808d;
+$header-color-1-deep: darken($header-color-1, 10%);
+$header-color-2: #ff7800;
+
+$fontsize-xs: 11px;
+$fontsize-s: 14px;
+$fontsize-sm: 16px;
+$fontsize-m: 21px;
+$fontsize-ml: 24px;
+$fontsize-l: 28px;
+$fontsize-xl: 34px;
+
+$icon-s: 24px;
+$icon-m: 36px;
+$icon-l: 48px;
+
+$font-1: "Myriad Pro","Verdana","Arial";
+$font-2: "Helvetica","Arial";
+
+@font-face {
+	font-family: 'iconbox';
+	src:url('/public/fonts/icomoon.eot');
+	src:url('/public/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/public/fonts/icomoon.woff') format('woff'),
+		url('/public/fonts/icomoon.ttf') format('truetype'),
+		url('/public/fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icons';
+	src:url('/public/fonts/icons.eot');
+	src:url('/public/fonts/icons.eot?#iefix') format('embedded-opentype'),
+		url('/public/fonts/icons.woff') format('woff'),
+		url('/public/fonts/icons.ttf') format('truetype'),
+		url('/public/fonts/icons.svg#icons') format('svg');
+}
+@font-face {
+	font-family: 'icons_2';
+	src:url('/public/fonts/icons_2.eot');
+	src:url('/public/fonts/icons_2.eot?#iefix') format('embedded-opentype'),
+		url('/public/fonts/icons_2.woff') format('woff'),
+		url('/public/fonts/icons_2.ttf') format('truetype'),
+		url('/public/fonts/icons_2.svg#icons_2') format('svg');
+}
+@font-face {
+	font-family: 'icons_3';
+	src:url('/public/fonts/icons_3.eot');
+	src:url('/public/fonts/icons_3.eot?#iefix') format('embedded-opentype'),
+		url('/public/fonts/icons_3.woff') format('woff'),
+		url('/public/fonts/icons_3.ttf') format('truetype'),
+		url('/public/fonts/icons_3.svg#icons_3') format('svg');
+}
+@font-face {
+	font-family: 'icons_math';
+	src:url('/public/fonts/math.eot');
+	src:url('/public/fonts/math.eot?#iefix') format('embedded-opentype'),
+		url('/public/fonts/math.woff') format('woff'),
+		url('/public/fonts/math.ttf') format('truetype'),
+		url('/public/fonts/math.svg#math') format('svg');
+}
+
+[class*="ic_"] {
+	font-family: 'icons','icons_2','icons_3','icons_math';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	display: block;
+	padding: 10px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+@mixin drop-shadow($color,$x,$y,$blur) {
+	-webkit-filter: drop-shadow($x $y $blur $color);
+	-moz-filter: drop-shadow($x $y $blur $color);
+	-ms-filter: drop-shadow($x $y $blur $color);
+	-o-filter: drop-shadow($x $y $blur $color);
+	filter: drop-shadow($x $y $blur $color);
+}
+@mixin bg-alpha-color($color-name,$alpha) {
+	background: rgba($color-name,$alpha);
+}
+@mixin fg-alpha-color($color-name,$alpha) {
+	color: rgba($color-name,$alpha);
+}
+@mixin grid-shadow {
+	@include single-box-shadow($black,2px,2px,2px);
+	background: $white;
+	transition: 0.3s;
+}
+@mixin bg-gradient($color1,$color2) {
+	background: $color1; /* Old browsers */
+	background: -moz-linear-gradient(top,  $color1 0%, $color2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $color1 0%,$color2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $color1 0%,$color2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  $color1 0%,$color2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 ); /* IE6-9 */
+}
+@mixin disabled(){
+  &.disabled {
+    a {
+      color: $light-gray;
+      cursor: default;
+      &:hover{
+        background: none;
+      }
+    }
+    &:hover {
+      border: 0 transparent;
+    }
+  }
+}
+.clear {
+	clear: both;
+}
+.page {
+	//@include susy-grid-background; //grid
+	@include container;
+	font-family: $font-2;
+}
+@mixin featureBg($name, $file) {
+  background: url("../images/img_product/#{$name}.#{$file}");
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  //line-height: image-height("../images/img_product/#{$name}.#{$file}");
+}
+@mixin featureH1($color: #2C3B66, $fontWeight: 800) {
+  color: $color;
+  font-weight: $fontWeight;
+}
+
+@mixin descriptionSize($L, $T, $fontsize-xs, $lineH: $fontsize-xs *1.5) {
+  left: $L;
+  top: $T;
+  font-size: $fontsize-xs;
+  line-height: $lineH;
+  position: absolute;
+}
+@mixin stepToCenter {
+  text-align: center;
+  line-height: 150px;
+}
+@mixin stepTagi {
+  font-size: $fontsize-xl*2;
+  color: $white;
+  font-weight: 800;
+}
+@mixin slide() {
+	.slide {
+	  height: 100px;
+	  position:relative;
+	  background-color: transparent;
+	  top: -180px;
+	  z-index: 100;
+	  #previous {
+		float:left;
+		}
+		#previous img:hover{
+		  background-image: url('/public/images/img_index/1-pre.png');
+		}
+	  #next {
+		float:right;
+		}
+		#next img:hover{
+		  background-image: url('/public/images/img_index/2-pre.png');
+		}
+	}
+}
+@mixin banner-nav() {
+	.banner-nav {
+		height: 20px;
+		text-align: center;
+		position: relative;
+		li {
+		  background-image:url('/public/images/img_index/point-s.png');
+		  background-repeat:no-repeat;
+		  width:15px;
+		  display: inline-block;
+		  height: 100%;
+		  &:first-child ~ li {
+			margin-left: 15px;
+		  }
+		  &.active, &:hover {
+			background-image: url('/public/images/img_index/point-b.png');
+			background-repeat:no-repeat;
+			display:inline-block;
+			vertical-align:top;
+			width:15px;
+		  }
+		  &:hover {
+			cursor: pointer;
+		  }
+		}
+	}
+
+	.button {
+      margin: -120px auto 20px !important;
+      max-width: 960px !important;
+    }
+}
+@mixin cssImageSprites($url, $w, $h) {
+	background: url($url) 0 0 no-repeat;
+	background-size: auto $h*2;
+	@content;
+}
+%socialMediaIcon {
+	//use css sprites
+	$icon_w: 30px;
+	$icon_h: 30px;
+	width: $icon_w;
+	height: $icon_h;
+	background: url('http://twportal.blob.core.windows.net/images-hf/general/ic_social.png') no-repeat;
+	background-position: 0 0;
+	background-size: $icon_w *3;
+	a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	&.socialMedia_fb {
+		background-position: -($icon_w *2) 0;
+		&:hover {
+			background-position: -($icon_w *2) -30px;
+		}
+	}
+	&.socialMedia_twitter {
+		background-position: -($icon_w *1) 0;
+		&:hover {
+			background-position: -($icon_w *1) -30px;
+		}
+	}
+	&.socialMedia_in {
+		background-position: -($icon_w *0) 0;
+		&:hover {
+			background-position: -($icon_w *0) -30px;
+		}
+	}
+}
+@mixin familyIcon($n) {
+	.familyIcon {
+		$icon_w: 50px;
+		$icon_h: 50px;
+		width: $icon_w;
+		height: $icon_h;
+		background: url('http://twportal.blob.core.windows.net/images-hf/general/ic_xyzfamily.png') no-repeat;
+		background-position: -($icon_w *2) 0;
+		background-size: $icon_w*($n+1);
+	}
+	@for $i from 1 through $n {
+		&:nth-of-type(#{$i+1}) {
+			a {
+				.familyIcon {
+					background-position: #{-(50*$i)}px 0px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,556 @@
+@import "_common.scss";
+@import "compass/reset";
+@import "compass/layout/sticky-footer";
+
+@include sticky-footer(100px, '.wrapper', '.push', '.footer');
+
+a {
+  text-decoration: none;
+  color: $header-color-1;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: shade($hover2,30%);  
+  }
+}
+
+html, body {
+  height: 100%;
+  font-family: "Helvetica", "Arial";
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+}
+.standardpage {
+  max-width: 960px;
+  width:100%;
+  margin: 0 auto;
+  font-family: $font-2;
+  color: $deep-gray;
+}
+
+.page1100 {
+  max-width: 1100px;
+  width:100%;
+  margin: 0 auto;
+}
+
+header {
+  font-size: $fontsize-sm;
+  background: $white;
+  font-family: $font-2;
+  width:100%;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1000;
+  @include box-shadow(0 0 10px rgba(black, .1));
+  .site-menu {
+    float: left;
+    position: relative;
+    & > div {
+      display: inline-block;
+      vertical-align: middle;
+      max-height: 60px;
+    }
+    .logo {
+      margin: -15px 50px 0 0;
+      img {
+        padding: 7px 5px;
+        max-height: 60px;
+        min-width: 100px;
+      }
+    }
+    .main-menu {
+      li {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        transition: 0.3s;
+        color: $header-color-1;
+        &:hover {
+          border-bottom: 5px solid $header-color-1;
+          a {
+            color: $header-color-1;
+            height: 25px;
+          }
+        }
+
+        a {
+          display: block;
+          height: 30px;
+          margin: 25px 0 5px;
+          padding: 0 15px;
+        }
+
+        &.active {
+          border-bottom: 3px solid $focused;
+          a {
+            height: 27px;
+            &:hover {
+              border-bottom: 0 solid $hover2;
+            }
+          }
+        }
+        .beta-mark {
+          position: absolute;
+          right: -15px;
+          top: 5px;
+          padding: 4px;
+          font-size: 11px;
+          color: white;
+          border-radius: 35%;
+          @include transform(scale(0.80));
+          background: #1abc9c;
+        }
+      }
+
+      .beta-mark {
+        position: absolute;
+        right: -15px;
+        top: 5px;
+        padding: 4px;
+        font-size: 11px;
+        color: white;
+        border-radius: 35%;
+        -webkit-transform: scale(0.80);
+        -moz-transform: scale(0.80);
+        -ms-transform: scale(0.80);
+        -o-transform: scale(0.80);
+        transform: scale(0.80);
+        background: #1abc9c;
+      }
+
+    }
+  }
+  .memberZone {
+    width: auto;
+    float: right;
+    padding-left: 15px;
+    background: $white;
+    display: inline-block;
+    .ctrlZone {
+      display: inline-block;
+      vertical-align: middle;
+      float: left;
+      padding: 11px;
+      max-height: 60px;
+      margin-left: 15px;
+      .socialMedia {
+        padding-top: 5px;
+        cursor: pointer;
+        li {
+          display: inline-block;
+          @extend %socialMediaIcon;
+        }
+      }
+    }
+    .xyzFamily, .signZone {
+      float: left;
+    }
+    .xyzFamily {
+      $itemNumber: 3;
+      width: 60px;
+      height: 60px;
+      padding: 5px;
+      position: relative;
+      cursor: pointer;
+      .familyMenu {
+        width: 50px;
+        height: 50px;
+        background: url('http://twportal.blob.core.windows.net/images-hf/general/ic_xyzfamily.png') no-repeat;
+        background-size: #{50*($itemNumber+1)}px;
+        background-position: 0 0;
+      }
+      &:hover {
+        background:  $header-color-1;
+      }
+      &.isHover {
+        .familyMenu {
+          background-position: 0 -50px;
+        }
+        .submenu {
+          height: 46+74*$itemNumber+13px;
+          z-index: 11;
+        }
+      }
+      &.notHover {
+        .submenu {
+          height: 0;
+          z-index: 10;
+        }
+      }
+      // .familyIcon {
+      //   @extend %familyIcon;
+      // }
+      .submenu {
+        @include translateX(-50%);
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        height: 0;
+        z-index: 10;
+        font-size: 16px;
+        overflow: hidden;
+        transition: 0.3s;
+        div {
+          width: 217px;
+          padding: 15px 20px;
+          cursor: default;
+          background:  $header-color-1;
+          color: $header-color-1-revise;
+          a {
+            padding: 7px 13px;
+            display: block;
+            color: $header-color-1-revise;
+            span {
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+          &.menuItem {
+            padding: 0;
+            transition: 0.3s;
+            cursor: pointer;
+            @include familyIcon($itemNumber);
+            &:hover {
+              background: $header-color-1-deep;
+              a {
+                color: $header-color-2;
+              }
+            }
+            @for $i from 1 through $itemNumber {
+              &:nth-of-type(#{$i+1}) {
+                &:hover {
+                  a {
+                    .familyIcon {
+                      background-position: #{-(50*$i)}px -50px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &:last-of-type {
+            position: relative;
+            &:before {
+              content: '';
+              width: 100%;
+              height: 0;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              border-top: 13px solid $header-color-1;
+              border-left: 13px solid transparent;
+              border-right: 13px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    .signZone {
+      padding: 5px;
+      text-align: center;
+      font-size: $fontsize-s;
+      position: relative;
+      cursor: pointer;
+      .sign-guest, .sign-member, .userAvatar {
+        // width: 100%;
+        // height: 100%;
+      }
+      .sign-member {
+        padding: 0 7px;
+      }
+      .userAvatar {
+        display: none;
+        width: 35px;
+        height: 35px;
+        //margin: 0 7px;
+        background: black;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        @include border-radius(50%);
+        img {
+          height: 35px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          @include translate(-50%, -50%);
+        }
+      }
+      .signin {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      &.userIsSign {
+        &:hover {
+          background: $header-color-1;
+          a {
+            .signin{
+              color: $header-color-2;
+            }
+          }
+        }
+        .signin {
+          line-height: 50px;
+          max-width: 110px;
+          overflow: hidden;
+          text-overflow : ellipsis;
+          white-space : nowrap;
+        }
+      }
+      &.userNotSign {
+        padding: 0;
+        z-index: 5;
+        // &:before {
+        //   content: '';
+        //   position: absolute;
+        //   width: 0;
+        //   height: 100%;
+        //   top: 0;
+        //   left: 50%;
+        //   background: $header-color-1;
+        //   z-index: -1;
+        // }
+        &:hover {
+          // &:before {            
+          //   width: 100%;
+          //   left: 0;
+          //   transition: 0.3s;
+          // }
+          a {
+            .signin{
+              //border: 1px solid rgba(0,0,0,0);
+              color: $header-color-2;
+            }
+          }
+        }
+        .signin {
+          color: $light-green;
+          margin: 15px 0;
+          padding: 7px;
+          // border: 1px solid $header-color-2;
+          // @include border-radius(25px);
+        }
+      }
+      &.isHover {
+        .submenu {
+          $itemNumber: 8;
+          height: 36+57*$itemNumber+13px;
+          transition: 0.5s;
+          z-index: 11;
+        }
+      }
+      &.notHover {
+        .submenu {
+          height: 0;
+          transition: 0.3s;
+          z-index: 10;
+        }
+      }
+      .submenu {
+        height: 0;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        font-size: 16px;
+        overflow: hidden;
+        div {
+          width: 195px;
+          background:  $header-color-1;
+          color: $header-color-1-revise;
+          a {
+            color: $header-color-1-revise;
+          }
+          &.menuItem {
+            text-align: left;
+            cursor: pointer;
+            a {
+              padding: 20px 15px;
+              display: block;
+            }
+            &:hover {
+              background: $header-color-1-deep;
+              a {
+                color: $header-color-2;
+              }
+            }
+          }
+          &:last-of-type {
+            position: relative;
+            &:before {
+              content: '';
+              width: 100%;
+              height: 0;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              border-top: 13px solid $header-color-1;
+              border-left: 13px solid transparent;
+              border-right: 13px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dropdown-inverse li.selected > a {
+  background: #2c81ba;
+  &:hover {
+    background: #2c81ba;
+  }
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  font-family: $font-2;
+  background: rgba(white, .7);
+  @include box-shadow(0 0 10px rgba(black, .1));
+  a {
+    color: $header-color-1;
+    cursor: pointer;
+    &:hover {
+      color: $header-color-2;
+      text-decoration: underline;
+    }
+  }
+  .footerContent {
+    max-width: 960px;
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .socialMediaBtn {
+    padding: 25px 0 0;
+    .socialMedia {
+      div {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        a {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        @include cssImageSprites('http://twportal.blob.core.windows.net/images-hf/general/ic_social.png', 30px, 30px) {
+          &:nth-of-type(1) {
+            background-position: -60px 0;
+            &:hover {
+              background-position: -60px -30px;
+            }
+          }
+          &:nth-of-type(2) {
+            background-position: -30px 0;
+            &:hover {
+              background-position: -30px -30px;
+            }
+          }
+          &:nth-of-type(3) {
+            background-position: 0 0;
+            &:hover {
+              background-position: 0 -30px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .list {
+    padding: 20px 0;
+  }
+  .others {
+    display: inline-block;
+    vertical-align: top;
+    .newKinpo {
+      margin-bottom: 20px;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        color: rgba(0,0,0,.7);
+        img {
+          width: 45px;
+        }
+        &:hover {
+          color: $header-color-2;
+          text-decoration: underline;
+        }
+      }
+    }
+    .lang {
+      width: auto;
+      padding: 10px;
+      border: 1px solid $header-color-1;
+      @include border-radius(40px);
+      &:hover {
+        background: $header-color-1;
+        color: $header-color-2;
+        p {
+          color: $header-color-2;
+        }
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        &:nth-of-type(1) {
+          font-size: 22px;
+          padding: 0 6px;;
+        }
+      }
+      p {
+        color: #4d4d4d;
+        margin: 0;
+      }
+    }
+  }
+  .sitemap {
+    width: auto;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    ul {
+      padding-right: 50px;
+      display: inline-block;
+      vertical-align: top;
+      li {
+        line-height: 2;
+        &:nth-of-type(1) {
+          font-size: 1.2em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .companyInfo {
+    width: 100%;
+    font-size: 14px;
+    li {
+      padding: 5px 0;
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        padding: 10px;
+      }
+      span {
+        color: rgba(black,.3);
+      }
+      &:first-of-type {
+        a {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .copyRight {
+    p {
+      color: rgba(0,0,0,.4);
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+}

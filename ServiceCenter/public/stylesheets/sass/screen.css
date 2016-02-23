@@ -1,0 +1,254 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../../sass/sass/_home.scss */
+.heading {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Helvetica", "Arial";
+  padding: 20px;
+}
+
+/* line 8, ../../sass/sass/_home.scss */
+.cate p {
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* line 13, ../../sass/sass/_home.scss */
+.faq {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+}
+
+/* line 19, ../../sass/sass/_home.scss */
+.tutorialvideo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: #490560;
+}
+
+/* line 26, ../../sass/sass/_home.scss */
+.documentdownload {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+}
+
+/* line 32, ../../sass/sass/_home.scss */
+.productwarranty {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: green;
+}
+
+/* line 38, ../../sass/sass/_home.scss */
+.button {
+  width: 450px;
+  height: 75px;
+  background-color: white;
+  margin: 20px 0px;
+  border: 2px solid #C3C3C3;
+}
+/* line 44, ../../sass/sass/_home.scss */
+.button .bilog {
+  margin: 3px 10px 0px 20px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #34495E;
+}
+/* line 51, ../../sass/sass/_home.scss */
+.button li {
+  float: left;
+}
+/* line 55, ../../sass/sass/_home.scss */
+.button .msg {
+  margin: 23px 10px;
+  font-size: 20px;
+}
+
+/* line 61, ../../sass/sass/_home.scss */
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  /* line 67, ../../sass/sass/_home.scss */
+  .button {
+    width: 300px;
+    height: 75px;
+    background-color: white;
+    margin: 20px 0px;
+    border: 2px solid #C3C3C3;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  /* line 75, ../../sass/sass/_home.scss */
+  .button li {
+    float: left;
+  }
+  /* line 79, ../../sass/sass/_home.scss */
+  .button .msg {
+    margin: 25px 5px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 88, ../../sass/sass/_home.scss */
+  .cate p {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* line 93, ../../sass/sass/_home.scss */
+  .faq {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+  }
+
+  /* line 99, ../../sass/sass/_home.scss */
+  .tutorialvideo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  /* line 106, ../../sass/sass/_home.scss */
+  .documentdownload {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #05FEF6;
+  }
+
+  /* line 112, ../../sass/sass/_home.scss */
+  .productwarranty {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #08F813;
+  }
+
+  /* line 119, ../../sass/sass/_home.scss */
+  .button {
+    width: 275px;
+    height: 50px;
+    background-color: white;
+    margin: 10px 0px;
+    border: 2px solid #C3C3C3;
+    border-radius: 10px;
+  }
+  /* line 126, ../../sass/sass/_home.scss */
+  .button .bilog {
+    margin: 3px 10px 0px 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #34495E;
+  }
+  /* line 133, ../../sass/sass/_home.scss */
+  .button li {
+    float: left;
+  }
+  /* line 137, ../../sass/sass/_home.scss */
+  .button .msg {
+    margin: 13px 5px;
+    font-size: 16px;
+  }
+
+  /* line 142, ../../sass/sass/_home.scss */
+  .heading {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Helvetica" ,"Arial";
+    padding: 20px;
+  }
+
+  /* line 148, ../../sass/sass/_home.scss */
+  p {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* line 153, ../../sass/sass/_home.scss */
+  .logo {
+    height: 100px;
+    width: 60px;
+  }
+}

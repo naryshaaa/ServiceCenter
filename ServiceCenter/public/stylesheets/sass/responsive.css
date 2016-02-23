@@ -1,0 +1,141 @@
+@media (max-width: 767px) {
+  /* line 2, ../../sass/sass/responsive.scss */
+  footer {
+    background: #c2c2c2;
+  }
+  /* line 4, ../../sass/sass/responsive.scss */
+  footer .sitemap {
+    font-size: 14px;
+    width: 94% !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+  /* line 11, ../../sass/sass/responsive.scss */
+  footer .below li {
+    float: left;
+    padding: 3px;
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 480px) and (min-width: 320px) {
+  /* line 21, ../../sass/sass/responsive.scss */
+  header {
+    background-color: #c2c2c2;
+  }
+
+  /* line 24, ../../sass/sass/responsive.scss */
+  header .site-menu .main-menu li a {
+    padding: 0 4px;
+  }
+
+  /* line 27, ../../sass/sass/responsive.scss */
+  p {
+    padding: 20px;
+  }
+
+  /* line 31, ../../sass/sass/responsive.scss */
+  .logo img {
+    width: 80px;
+    position: relative;
+    z-index: 100;
+  }
+
+  /* line 38, ../../sass/sass/responsive.scss */
+  .adjust img {
+    height: 115px;
+  }
+
+  /* line 42, ../../sass/sass/responsive.scss */
+  .main-menu {
+    background-color: #ebe3e1;
+    width: 100%;
+    margin-top: 10px;
+  }
+  /* line 46, ../../sass/sass/responsive.scss */
+  .main-menu a {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  /* line 51, ../../sass/sass/responsive.scss */
+  .memberZone {
+    position: absolute;
+    z-index: 0;
+    padding-left: 0;
+    top: 0;
+    right: 0;
+    background: #c2c2c2 !important;
+  }
+
+  /* line 60, ../../sass/sass/responsive.scss */
+  footer {
+    background: #c2c2c2;
+  }
+  /* line 62, ../../sass/sass/responsive.scss */
+  footer .sitemap {
+    font-size: 14px;
+    width: 94% !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+  /* line 68, ../../sass/sass/responsive.scss */
+  footer .companyInfo {
+    width: 100%;
+    font-size: 12px;
+  }
+  /* line 71, ../../sass/sass/responsive.scss */
+  footer .companyInfo li {
+    padding: 5px 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 75, ../../sass/sass/responsive.scss */
+  footer .companyInfo li a {
+    padding: 10px;
+  }
+  /* line 78, ../../sass/sass/responsive.scss */
+  footer .companyInfo li span {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  /* line 82, ../../sass/sass/responsive.scss */
+  footer .companyInfo li:first-of-type a {
+    padding-left: 0;
+  }
+  /* line 88, ../../sass/sass/responsive.scss */
+  footer .lang {
+    width: 100px;
+    height: 45px;
+    border: 1px solid #2f3642;
+    border-radius: 40px;
+  }
+  /* line 93, ../../sass/sass/responsive.scss */
+  footer .lang span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* line 97, ../../sass/sass/responsive.scss */
+  footer .lang p {
+    padding: 0px;
+    font-size: 14px;
+  }
+  /* line 102, ../../sass/sass/responsive.scss */
+  footer .newKinpo {
+    margin-bottom: 20px;
+  }
+  /* line 104, ../../sass/sass/responsive.scss */
+  footer .newKinpo a {
+    padding-left: 10px;
+  }
+  /* line 107, ../../sass/sass/responsive.scss */
+  footer .newKinpo span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  /* line 115, ../../sass/sass/responsive.scss */
+  footer .below li {
+    float: left;
+    padding: 3px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,971 @@
+/* line 1, ../../sass/sass/_iconfont.scss */
+.ic_render:before {
+  content: "\e600";
+}
+
+/* line 4, ../../sass/sass/_iconfont.scss */
+.ic_upload:before {
+  content: "\e602";
+}
+
+/* line 7, ../../sass/sass/_iconfont.scss */
+.ic_sttachment:before {
+  content: "\e603";
+}
+
+/* line 10, ../../sass/sass/_iconfont.scss */
+.ic_star:before {
+  content: "\e604";
+}
+
+/* line 13, ../../sass/sass/_iconfont.scss */
+.ic_share-my:before {
+  content: "\e605";
+}
+
+/* line 16, ../../sass/sass/_iconfont.scss */
+.ic_like:before {
+  content: "\e606";
+}
+
+/* line 19, ../../sass/sass/_iconfont.scss */
+.ic_info:before {
+  content: "\e607";
+}
+
+/* line 22, ../../sass/sass/_iconfont.scss */
+.ic_idea:before {
+  content: "\e608";
+}
+
+/* line 25, ../../sass/sass/_iconfont.scss */
+.ic_good:before {
+  content: "\e609";
+}
+
+/* line 28, ../../sass/sass/_iconfont.scss */
+.ic_edit:before {
+  content: "\e60a";
+}
+
+/* line 31, ../../sass/sass/_iconfont.scss */
+.ic_download:before {
+  content: "\e60b";
+}
+
+/* line 34, ../../sass/sass/_iconfont.scss */
+.ic_comment:before {
+  content: "\e60c";
+}
+
+/* line 37, ../../sass/sass/_iconfont.scss */
+.ic_attention:before {
+  content: "\e60d";
+}
+
+/* line 40, ../../sass/sass/_iconfont.scss */
+.ic_add:before {
+  content: "\e60e";
+}
+
+/* line 43, ../../sass/sass/_iconfont.scss */
+.ic_arrow_right:before {
+  content: "\e601";
+}
+
+/* line 46, ../../sass/sass/_iconfont.scss */
+.ic_arrow_left:before {
+  content: "\e60f";
+}
+
+/* line 49, ../../sass/sass/_iconfont.scss */
+.ic_plus:before {
+  content: "\e101";
+}
+
+/* line 52, ../../sass/sass/_iconfont.scss */
+.ic_minus:before {
+  content: "\e102";
+}
+
+/* line 55, ../../sass/sass/_iconfont.scss */
+.ic_multiply:before {
+  content: "\e103";
+}
+
+/* line 58, ../../sass/sass/_iconfont.scss */
+.ic_divide:before {
+  content: "\e104";
+}
+
+/* line 61, ../../sass/sass/_iconfont.scss */
+.ic_fi_color:before {
+  content: "\e105";
+}
+
+/* line 64, ../../sass/sass/_iconfont.scss */
+.ic_locate_normal:before {
+  content: "\e106";
+}
+
+/* line 67, ../../sass/sass/_iconfont.scss */
+.ic_support:before {
+  content: "\e200";
+}
+
+/* line 70, ../../sass/sass/_iconfont.scss */
+.ic_store:before {
+  content: "\e201";
+}
+
+/* line 73, ../../sass/sass/_iconfont.scss */
+.ic_product:before {
+  content: "\e202";
+}
+
+/* line 76, ../../sass/sass/_iconfont.scss */
+.ic_lang:before {
+  content: "\e204";
+}
+
+/* line 79, ../../sass/sass/_iconfont.scss */
+.ic_gallery:before {
+  content: "\e203";
+}
+
+/* line 82, ../../sass/sass/_iconfont.scss */
+.ic_news:before {
+  content: "\e206";
+}
+
+/* line 85, ../../sass/sass/_iconfont.scss */
+.ic_menu:before {
+  content: "\e205";
+}
+
+@font-face {
+  font-family: 'iconbox';
+  src: url("/public/fonts/icomoon.eot");
+  src: url("/public/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("/public/fonts/icomoon.woff") format("woff"), url("/public/fonts/icomoon.ttf") format("truetype"), url("/public/fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icons';
+  src: url("/public/fonts/icons.eot");
+  src: url("/public/fonts/icons.eot?#iefix") format("embedded-opentype"), url("/public/fonts/icons.woff") format("woff"), url("/public/fonts/icons.ttf") format("truetype"), url("/public/fonts/icons.svg#icons") format("svg");
+}
+@font-face {
+  font-family: 'icons_2';
+  src: url("/public/fonts/icons_2.eot");
+  src: url("/public/fonts/icons_2.eot?#iefix") format("embedded-opentype"), url("/public/fonts/icons_2.woff") format("woff"), url("/public/fonts/icons_2.ttf") format("truetype"), url("/public/fonts/icons_2.svg#icons_2") format("svg");
+}
+@font-face {
+  font-family: 'icons_3';
+  src: url("/public/fonts/icons_3.eot");
+  src: url("/public/fonts/icons_3.eot?#iefix") format("embedded-opentype"), url("/public/fonts/icons_3.woff") format("woff"), url("/public/fonts/icons_3.ttf") format("truetype"), url("/public/fonts/icons_3.svg#icons_3") format("svg");
+}
+@font-face {
+  font-family: 'icons_math';
+  src: url("/public/fonts/math.eot");
+  src: url("/public/fonts/math.eot?#iefix") format("embedded-opentype"), url("/public/fonts/math.woff") format("woff"), url("/public/fonts/math.ttf") format("truetype"), url("/public/fonts/math.svg#math") format("svg");
+}
+/* line 94, ../../sass/sass/_common.scss */
+[class*="ic_"] {
+  font-family: 'icons','icons_2','icons_3','icons_math';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  display: block;
+  padding: 10px;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 151, ../../sass/sass/_common.scss */
+.clear {
+  clear: both;
+}
+
+/* line 154, ../../sass/sass/_common.scss */
+.page {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Helvetica", "Arial";
+}
+/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 245, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li {
+  width: 30px;
+  height: 30px;
+  background: url("http://twportal.blob.core.windows.net/images-hf/general/ic_social.png") no-repeat;
+  background-position: 0 0;
+  background-size: 90px;
+}
+/* line 254, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 259, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li.socialMedia_fb {
+  background-position: -60px 0;
+}
+/* line 261, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li.socialMedia_fb:hover {
+  background-position: -60px -30px;
+}
+/* line 265, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li.socialMedia_twitter {
+  background-position: -30px 0;
+}
+/* line 267, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li.socialMedia_twitter:hover {
+  background-position: -30px -30px;
+}
+/* line 271, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li.socialMedia_in {
+  background-position: 0px 0;
+}
+/* line 273, ../../sass/sass/_common.scss */
+header .memberZone .ctrlZone .socialMedia li.socialMedia_in:hover {
+  background-position: 0px -30px;
+}
+
+/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.wrapper {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+/* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.wrapper .push {
+  height: 100px;
+}
+
+/* line 20, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.footer {
+  clear: both;
+  position: relative;
+  height: 100px;
+}
+
+/* line 7, ../../sass/sass/hf.scss */
+a {
+  text-decoration: none;
+  color: #2f3642;
+  transition: color 0.2s ease-in-out;
+}
+/* line 11, ../../sass/sass/hf.scss */
+a:hover {
+  color: #598e89;
+}
+
+/* line 16, ../../sass/sass/hf.scss */
+html, body {
+  height: 100%;
+  font-family: "Helvetica", "Arial";
+}
+
+/* line 20, ../../sass/sass/hf.scss */
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+}
+
+/* line 25, ../../sass/sass/hf.scss */
+.standardpage {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Helvetica", "Arial";
+  color: #4d4d4d;
+}
+
+/* line 33, ../../sass/sass/hf.scss */
+.page1100 {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 39, ../../sass/sass/hf.scss */
+header {
+  font-size: 16px;
+  background: #fff;
+  font-family: "Helvetica", "Arial";
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1000;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* line 48, ../../sass/sass/hf.scss */
+header .site-menu {
+  float: left;
+  position: relative;
+}
+/* line 51, ../../sass/sass/hf.scss */
+header .site-menu > div {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 60px;
+}
+/* line 56, ../../sass/sass/hf.scss */
+header .site-menu .logo {
+  margin: -15px 50px 0 0;
+}
+/* line 58, ../../sass/sass/hf.scss */
+header .site-menu .logo img {
+  padding: 7px 5px;
+  max-height: 60px;
+  min-width: 100px;
+}
+/* line 65, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  transition: 0.3s;
+  color: #2f3642;
+}
+/* line 71, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li:hover {
+  border-bottom: 5px solid #2f3642;
+}
+/* line 73, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li:hover a {
+  color: #2f3642;
+  height: 25px;
+}
+/* line 79, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li a {
+  display: block;
+  height: 30px;
+  margin: 25px 0 5px;
+  padding: 0 15px;
+}
+/* line 86, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li.active {
+  border-bottom: 3px solid orange;
+}
+/* line 88, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li.active a {
+  height: 27px;
+}
+/* line 90, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li.active a:hover {
+  border-bottom: 0 solid #80cbc4;
+}
+/* line 95, ../../sass/sass/hf.scss */
+header .site-menu .main-menu li .beta-mark {
+  position: absolute;
+  right: -15px;
+  top: 5px;
+  padding: 4px;
+  font-size: 11px;
+  color: white;
+  border-radius: 35%;
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  background: #1abc9c;
+}
+/* line 108, ../../sass/sass/hf.scss */
+header .site-menu .main-menu .beta-mark {
+  position: absolute;
+  right: -15px;
+  top: 5px;
+  padding: 4px;
+  font-size: 11px;
+  color: white;
+  border-radius: 35%;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  background: #1abc9c;
+}
+/* line 126, ../../sass/sass/hf.scss */
+header .memberZone {
+  width: auto;
+  float: right;
+  padding-left: 15px;
+  background: #fff;
+  display: inline-block;
+}
+/* line 132, ../../sass/sass/hf.scss */
+header .memberZone .ctrlZone {
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  padding: 11px;
+  max-height: 60px;
+  margin-left: 15px;
+}
+/* line 139, ../../sass/sass/hf.scss */
+header .memberZone .ctrlZone .socialMedia {
+  padding-top: 5px;
+  cursor: pointer;
+}
+/* line 142, ../../sass/sass/hf.scss */
+header .memberZone .ctrlZone .socialMedia li {
+  display: inline-block;
+}
+/* line 148, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily, header .memberZone .signZone {
+  float: left;
+}
+/* line 151, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 158, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .familyMenu {
+  width: 50px;
+  height: 50px;
+  background: url("http://twportal.blob.core.windows.net/images-hf/general/ic_xyzfamily.png") no-repeat;
+  background-size: 200px;
+  background-position: 0 0;
+}
+/* line 165, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily:hover {
+  background: #2f3642;
+}
+/* line 169, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily.isHover .familyMenu {
+  background-position: 0 -50px;
+}
+/* line 172, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily.isHover .submenu {
+  height: 281px;
+  z-index: 11;
+}
+/* line 178, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily.notHover .submenu {
+  height: 0;
+  z-index: 10;
+}
+/* line 186, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu {
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  height: 0;
+  z-index: 10;
+  font-size: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+/* line 196, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div {
+  width: 217px;
+  padding: 15px 20px;
+  cursor: default;
+  background: #2f3642;
+  color: #77808d;
+}
+/* line 202, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div a {
+  padding: 7px 13px;
+  display: block;
+  color: #77808d;
+}
+/* line 206, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 211, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div.menuItem {
+  padding: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* line 279, ../../sass/sass/_common.scss */
+header .memberZone .xyzFamily .submenu div.menuItem .familyIcon {
+  width: 50px;
+  height: 50px;
+  background: url("http://twportal.blob.core.windows.net/images-hf/general/ic_xyzfamily.png") no-repeat;
+  background-position: -100px 0;
+  background-size: 200px;
+}
+/* line 291, ../../sass/sass/_common.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:nth-of-type(2) a .familyIcon {
+  background-position: -50px 0px;
+}
+/* line 291, ../../sass/sass/_common.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:nth-of-type(3) a .familyIcon {
+  background-position: -100px 0px;
+}
+/* line 291, ../../sass/sass/_common.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:nth-of-type(4) a .familyIcon {
+  background-position: -150px 0px;
+}
+/* line 216, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:hover {
+  background: #1a1e24;
+}
+/* line 218, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:hover a {
+  color: #ff7800;
+}
+/* line 226, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:nth-of-type(2):hover a .familyIcon {
+  background-position: -50px -50px;
+}
+/* line 226, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:nth-of-type(3):hover a .familyIcon {
+  background-position: -100px -50px;
+}
+/* line 226, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div.menuItem:nth-of-type(4):hover a .familyIcon {
+  background-position: -150px -50px;
+}
+/* line 234, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div:last-of-type {
+  position: relative;
+}
+/* line 236, ../../sass/sass/hf.scss */
+header .memberZone .xyzFamily .submenu div:last-of-type:before {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 13px solid #2f3642;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}
+/* line 251, ../../sass/sass/hf.scss */
+header .memberZone .signZone {
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 261, ../../sass/sass/hf.scss */
+header .memberZone .signZone .sign-member {
+  padding: 0 7px;
+}
+/* line 264, ../../sass/sass/hf.scss */
+header .memberZone .signZone .userAvatar {
+  display: none;
+  width: 35px;
+  height: 35px;
+  background: black;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 274, ../../sass/sass/hf.scss */
+header .memberZone .signZone .userAvatar img {
+  height: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 282, ../../sass/sass/hf.scss */
+header .memberZone .signZone .signin {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 288, ../../sass/sass/hf.scss */
+header .memberZone .signZone.userIsSign:hover {
+  background: #2f3642;
+}
+/* line 291, ../../sass/sass/hf.scss */
+header .memberZone .signZone.userIsSign:hover a .signin {
+  color: #ff7800;
+}
+/* line 296, ../../sass/sass/hf.scss */
+header .memberZone .signZone.userIsSign .signin {
+  line-height: 50px;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 304, ../../sass/sass/hf.scss */
+header .memberZone .signZone.userNotSign {
+  padding: 0;
+  z-index: 5;
+}
+/* line 324, ../../sass/sass/hf.scss */
+header .memberZone .signZone.userNotSign:hover a .signin {
+  color: #ff7800;
+}
+/* line 330, ../../sass/sass/hf.scss */
+header .memberZone .signZone.userNotSign .signin {
+  color: #1abc9c;
+  margin: 15px 0;
+  padding: 7px;
+}
+/* line 339, ../../sass/sass/hf.scss */
+header .memberZone .signZone.isHover .submenu {
+  height: 505px;
+  transition: 0.5s;
+  z-index: 11;
+}
+/* line 347, ../../sass/sass/hf.scss */
+header .memberZone .signZone.notHover .submenu {
+  height: 0;
+  transition: 0.3s;
+  z-index: 10;
+}
+/* line 353, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu {
+  height: 0;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  font-size: 16px;
+  overflow: hidden;
+}
+/* line 360, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div {
+  width: 195px;
+  background: #2f3642;
+  color: #77808d;
+}
+/* line 364, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div a {
+  color: #77808d;
+}
+/* line 367, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div.menuItem {
+  text-align: left;
+  cursor: pointer;
+}
+/* line 370, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div.menuItem a {
+  padding: 20px 15px;
+  display: block;
+}
+/* line 374, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div.menuItem:hover {
+  background: #1a1e24;
+}
+/* line 376, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div.menuItem:hover a {
+  color: #ff7800;
+}
+/* line 381, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div:last-of-type {
+  position: relative;
+}
+/* line 383, ../../sass/sass/hf.scss */
+header .memberZone .signZone .submenu div:last-of-type:before {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 13px solid #2f3642;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}
+
+/* line 401, ../../sass/sass/hf.scss */
+.dropdown-inverse li.selected > a {
+  background: #2c81ba;
+}
+/* line 403, ../../sass/sass/hf.scss */
+.dropdown-inverse li.selected > a:hover {
+  background: #2c81ba;
+}
+
+/* line 408, ../../sass/sass/hf.scss */
+footer {
+  width: 100%;
+  padding: 20px 0;
+  font-family: "Helvetica", "Arial";
+  background: rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* line 414, ../../sass/sass/hf.scss */
+footer a {
+  color: #2f3642;
+  cursor: pointer;
+}
+/* line 417, ../../sass/sass/hf.scss */
+footer a:hover {
+  color: #ff7800;
+  text-decoration: underline;
+}
+/* line 422, ../../sass/sass/hf.scss */
+footer .footerContent {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 428, ../../sass/sass/hf.scss */
+footer .socialMediaBtn {
+  padding: 25px 0 0;
+}
+/* line 431, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: url("http://twportal.blob.core.windows.net/images-hf/general/ic_social.png") 0 0 no-repeat;
+  background-size: auto 60px;
+}
+/* line 435, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 441, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div:nth-of-type(1) {
+  background-position: -60px 0;
+}
+/* line 443, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div:nth-of-type(1):hover {
+  background-position: -60px -30px;
+}
+/* line 447, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div:nth-of-type(2) {
+  background-position: -30px 0;
+}
+/* line 449, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div:nth-of-type(2):hover {
+  background-position: -30px -30px;
+}
+/* line 453, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div:nth-of-type(3) {
+  background-position: 0 0;
+}
+/* line 455, ../../sass/sass/hf.scss */
+footer .socialMediaBtn .socialMedia div:nth-of-type(3):hover {
+  background-position: 0 -30px;
+}
+/* line 463, ../../sass/sass/hf.scss */
+footer .list {
+  padding: 20px 0;
+}
+/* line 466, ../../sass/sass/hf.scss */
+footer .others {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 469, ../../sass/sass/hf.scss */
+footer .others .newKinpo {
+  margin-bottom: 20px;
+}
+/* line 471, ../../sass/sass/hf.scss */
+footer .others .newKinpo span {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 475, ../../sass/sass/hf.scss */
+footer .others .newKinpo span img {
+  width: 45px;
+}
+/* line 478, ../../sass/sass/hf.scss */
+footer .others .newKinpo span:hover {
+  color: #ff7800;
+  text-decoration: underline;
+}
+/* line 484, ../../sass/sass/hf.scss */
+footer .others .lang {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #2f3642;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+/* line 489, ../../sass/sass/hf.scss */
+footer .others .lang:hover {
+  background: #2f3642;
+  color: #ff7800;
+}
+/* line 492, ../../sass/sass/hf.scss */
+footer .others .lang:hover p {
+  color: #ff7800;
+}
+/* line 496, ../../sass/sass/hf.scss */
+footer .others .lang span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 499, ../../sass/sass/hf.scss */
+footer .others .lang span:nth-of-type(1) {
+  font-size: 22px;
+  padding: 0 6px;
+}
+/* line 504, ../../sass/sass/hf.scss */
+footer .others .lang p {
+  color: #4d4d4d;
+  margin: 0;
+}
+/* line 510, ../../sass/sass/hf.scss */
+footer .sitemap {
+  width: auto;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+/* line 516, ../../sass/sass/hf.scss */
+footer .sitemap ul {
+  padding-right: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 520, ../../sass/sass/hf.scss */
+footer .sitemap ul li {
+  line-height: 2;
+}
+/* line 522, ../../sass/sass/hf.scss */
+footer .sitemap ul li:nth-of-type(1) {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+/* line 529, ../../sass/sass/hf.scss */
+footer .companyInfo {
+  width: 100%;
+  font-size: 14px;
+}
+/* line 532, ../../sass/sass/hf.scss */
+footer .companyInfo li {
+  padding: 5px 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 536, ../../sass/sass/hf.scss */
+footer .companyInfo li a {
+  padding: 10px;
+}
+/* line 539, ../../sass/sass/hf.scss */
+footer .companyInfo li span {
+  color: rgba(0, 0, 0, 0.3);
+}
+/* line 543, ../../sass/sass/hf.scss */
+footer .companyInfo li:first-of-type a {
+  padding-left: 0;
+}
+/* line 550, ../../sass/sass/hf.scss */
+footer .copyRight p {
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+  font-size: 12px;
+}
