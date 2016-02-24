@@ -85,13 +85,13 @@
   }
   /* line 71, ../../sass/sass/responsive.scss */
   footer .companyInfo li {
-    padding: 5px 0;
+    padding: 2px;
     display: inline-block;
     vertical-align: middle;
   }
   /* line 75, ../../sass/sass/responsive.scss */
   footer .companyInfo li a {
-    padding: 10px;
+    padding: 5px;
   }
   /* line 78, ../../sass/sass/responsive.scss */
   footer .companyInfo li span {
@@ -102,37 +102,49 @@
     padding-left: 0;
   }
   /* line 88, ../../sass/sass/responsive.scss */
-  footer .lang {
-    width: 100px;
+  footer .list {
+    padding: 10px;
+  }
+  /* line 92, ../../sass/sass/responsive.scss */
+  footer .others li {
+    float: left;
+  }
+  /* line 94, ../../sass/sass/responsive.scss */
+  footer .others li:nth-of-type(2) {
+    padding-left: 10px;
+  }
+  /* line 98, ../../sass/sass/responsive.scss */
+  footer .others .lang {
+    width: 150px;
     height: 45px;
     border: 1px solid #2f3642;
     border-radius: 40px;
   }
-  /* line 93, ../../sass/sass/responsive.scss */
-  footer .lang span {
+  /* line 103, ../../sass/sass/responsive.scss */
+  footer .others .lang span {
     display: inline-block;
     vertical-align: middle;
   }
-  /* line 97, ../../sass/sass/responsive.scss */
-  footer .lang p {
+  /* line 107, ../../sass/sass/responsive.scss */
+  footer .others .lang p {
     padding: 0px;
     font-size: 14px;
   }
-  /* line 102, ../../sass/sass/responsive.scss */
-  footer .newKinpo {
+  /* line 112, ../../sass/sass/responsive.scss */
+  footer .others .newKinpo {
     margin-bottom: 20px;
   }
-  /* line 104, ../../sass/sass/responsive.scss */
-  footer .newKinpo a {
+  /* line 114, ../../sass/sass/responsive.scss */
+  footer .others .newKinpo a {
     padding-left: 10px;
   }
-  /* line 107, ../../sass/sass/responsive.scss */
-  footer .newKinpo span {
+  /* line 117, ../../sass/sass/responsive.scss */
+  footer .others .newKinpo span {
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
   }
-  /* line 115, ../../sass/sass/responsive.scss */
+  /* line 127, ../../sass/sass/responsive.scss */
   footer .below li {
     float: left;
     padding: 3px;

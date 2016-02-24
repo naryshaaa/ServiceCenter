@@ -387,7 +387,7 @@
                     </ul>
                     <ul>
                         <li class="clicktoShow"><a ng-href="{{footerContent.news.url}}" ng-bind="footerContent.news.name"></a></li>
-                        <li class="accordionItem" class="news"ng-repeat="item in footerContent.news.content"><a ng-href="{{item.url}}" ng-bind="item.name"></a></li>
+                        <li class="accordionItem" class="news" ng-repeat="item in footerContent.news.content"><a ng-href="{{item.url}}" ng-bind="item.name"></a></li>
                     </ul>
                 </div>
 
@@ -434,31 +434,8 @@
                         </div>
                     </div>
                 </div><br><br>
-                <div class="row hidden-sm hidden-md hidden-lg">
-                    <div class="col-xs-6">
-                        <ul class="others">
-                            <li class="newKinpo">
-                                <a href="http://www.newkinpogroup.com/" target="blank">
-                                    <span><img src="https://twportal.blob.core.windows.net/main-images/ic_kinpo.png"></span>
-                                    <span>New Kinpo Group</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6">
-                        <ul class="others">
-                            <li>
-                                <a href="http://www.xyzprinting.com/${lang.toString()}/locale">
-                                    <div class="lang">
-                                        <span class="ic_lang"></span>
-                                        <span><p>US-English</p></span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <ul class="others hidden-xs">
+
+                <ul class="others">
                     <li class="newKinpo">
                         <a href="http://www.newkinpogroup.com/" target="blank">
                             <span><img src="https://twportal.blob.core.windows.net/main-images/ic_kinpo.png"></span>
@@ -475,24 +452,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="companyInfo hidden-xs">
+            <div class="companyInfo">
                 <ul>
                     <li ng-repeat="item in footerContent.aboutUs.content">
                         <a ng-href="{{item.url}}" ng-bind="item.name"></a>
                         <span>/</span>
                     </li>
                 </ul>
-            </div>
-            <div class="row hidden-sm hidden-md hidden-lg" >
-                <div class="col-xs-12 below">
-                    <ul>
-                        <li><a href="#">About /</a></li>
-                        <li><a href="#">Contact Us /</a></li>
-                        <li><a href="#">Privacy Policy /</a></li>
-                        <li><a href="#">Terms of Use /</a></li>
-                        <li><a href="#">Career </a></li>
-                    </ul>
-                </div>
             </div>
             <div class="copyRight">
                 <p>Copyright &copy; 2016 XYZprinting, Inc. All Rights Reserved.</p>
