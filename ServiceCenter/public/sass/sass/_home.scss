@@ -1,40 +1,46 @@
-.heading{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Helvetica", "Arial";
-    padding: 20px;
-}
-.cate{
+
+.serviceCate{
+    .heading{
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "Helvetica", "Arial";
+        padding: 20px;
+    }
     p{
         padding: 20px;
         font-size: 20px;
     }
-}
-.faq {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	background-color:orange;
-}
-.tutorialvideo {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	background-color:#490560;
+    li{
+        float: left;
+        margin: 20px 63px;
+    }
+    .faq {
+    	border-radius: 50%;
+    	width: 150px;
+    	height: 150px;
+    	background-color:orange;
+    }
+    .tutorialvideo {
+    	border-radius: 50%;
+    	width: 150px;
+    	height: 150px;
+    	background-color:#490560;
+    }
+
+    .documentdownload {
+    	border-radius: 50%;
+    	width: 150px;
+    	height: 150px;
+    	background-color:pink;
+    }
+    .productwarranty {
+    	border-radius: 50%;
+    	width: 150px;
+    	height: 150px;
+    	background-color:green;
+    }
 }
 
-.documentdownload {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	background-color:pink;
-}
-.productwarranty {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	background-color:green;
-}
 .button {
     	width: 450px;
     	height: 75px;
@@ -62,6 +68,7 @@
 	 cursor: pointer;
 }
 
+
 @media (max-width: 767px) {
 
     .button {
@@ -84,74 +91,79 @@
 }
 
 @media (max-width: 480px) {
-.cate{
-    p{
-        padding: 20px;
-        font-size: 14px;
-    }
-}
-    .faq {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        background-color:yellow;
-    }
-    .tutorialvideo {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        background-color:red;
-    }
-
-    .documentdownload {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        background-color: #05FEF6;
-    }
-    .productwarranty {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        background-color: #08F813;
-    }
-
-    .button {
-    	width: 275px;
-    	height: 50px;
-        background-color: white;
-        margin: 10px 0px;
-        border: 2px solid #C3C3C3;
-        border-radius: 10px;
-        .bilog{
-             margin: 3px 10px 0px 20px;
-             border-radius: 50%;
-             width: 40px;
-             height: 40px;
-             background-color: #34495E;
+    .serviceCate{
+        p{
+            padding: 20px;
+            font-size: 14px;
         }
         li{
-          float: left;
+            float: left;
+            margin: 10px;
+        }
 
+        .faq {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
         }
-        .msg{
-           margin: 13px 5px;
-           font-size: 16px;
+        .tutorialvideo {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color:red;
         }
-    }
-    .heading{
-         font-size: 18px;
-         font-weight: bold;
-         font-family: "Helvetica" ,"Arial";
-         padding: 20px;
-    }
-    p{
-         padding: 20px;
-         font-size: 15px;
-         text-align: center;
-    }
-    .logo{
-        height: 100px;
-        width: 60px;
+
+        .documentdownload {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #05FEF6;
+        }
+        .productwarranty {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #08F813;
+        }
+
+        .button {
+            width: 275px;
+            height: 50px;
+            background-color: white;
+            margin: 10px 0px;
+            border: 2px solid #C3C3C3;
+            border-radius: 10px;
+            .bilog{
+                 margin: 3px 10px 0px 20px;
+                 border-radius: 50%;
+                 width: 40px;
+                 height: 40px;
+                 background-color: #34495E;
+            }
+            li{
+              float: left;
+
+            }
+            .msg{
+               margin: 13px 5px;
+               font-size: 16px;
+            }
+        }
+        .heading{
+             font-size: 18px;
+             font-weight: bold;
+             font-family: "Helvetica" ,"Arial";
+             padding: 20px;
+        }
+        p{
+             padding: 20px;
+             font-size: 15px;
+             text-align: center;
+        }
+        .logo{
+            height: 100px;
+            width: 60px;
+        }
     }
 }

@@ -67,53 +67,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 1, ../../sass/sass/_home.scss */
-.heading {
+/* line 3, ../../sass/sass/_home.scss */
+.serviceCate .heading {
   font-size: 25px;
   font-weight: bold;
   font-family: "Helvetica", "Arial";
   padding: 20px;
 }
-
-/* line 8, ../../sass/sass/_home.scss */
-.cate p {
+/* line 9, ../../sass/sass/_home.scss */
+.serviceCate p {
   padding: 20px;
   font-size: 20px;
 }
-
 /* line 13, ../../sass/sass/_home.scss */
-.faq {
+.serviceCate li {
+  float: left;
+  margin: 20px 63px;
+}
+/* line 17, ../../sass/sass/_home.scss */
+.serviceCate .faq {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: orange;
 }
-
-/* line 19, ../../sass/sass/_home.scss */
-.tutorialvideo {
+/* line 23, ../../sass/sass/_home.scss */
+.serviceCate .tutorialvideo {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: #490560;
 }
-
-/* line 26, ../../sass/sass/_home.scss */
-.documentdownload {
+/* line 30, ../../sass/sass/_home.scss */
+.serviceCate .documentdownload {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: pink;
 }
-
-/* line 32, ../../sass/sass/_home.scss */
-.productwarranty {
+/* line 36, ../../sass/sass/_home.scss */
+.serviceCate .productwarranty {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: green;
 }
 
-/* line 38, ../../sass/sass/_home.scss */
+/* line 44, ../../sass/sass/_home.scss */
 .button {
   width: 450px;
   height: 75px;
@@ -121,7 +121,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 20px 0px;
   border: 2px solid #C3C3C3;
 }
-/* line 44, ../../sass/sass/_home.scss */
+/* line 50, ../../sass/sass/_home.scss */
 .button .bilog {
   margin: 3px 10px 0px 20px;
   border-radius: 50%;
@@ -129,23 +129,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 60px;
   background-color: #34495E;
 }
-/* line 51, ../../sass/sass/_home.scss */
+/* line 57, ../../sass/sass/_home.scss */
 .button li {
   float: left;
 }
-/* line 55, ../../sass/sass/_home.scss */
+/* line 61, ../../sass/sass/_home.scss */
 .button .msg {
   margin: 23px 10px;
   font-size: 20px;
 }
 
-/* line 61, ../../sass/sass/_home.scss */
+/* line 67, ../../sass/sass/_home.scss */
 .pointer {
   cursor: pointer;
 }
 
 @media (max-width: 767px) {
-  /* line 67, ../../sass/sass/_home.scss */
+  /* line 74, ../../sass/sass/_home.scss */
   .button {
     width: 300px;
     height: 75px;
@@ -155,57 +155,57 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 10px;
     border-radius: 10px;
   }
-  /* line 75, ../../sass/sass/_home.scss */
+  /* line 82, ../../sass/sass/_home.scss */
   .button li {
     float: left;
   }
-  /* line 79, ../../sass/sass/_home.scss */
+  /* line 86, ../../sass/sass/_home.scss */
   .button .msg {
     margin: 25px 5px;
     font-size: 18px;
   }
 }
 @media (max-width: 480px) {
-  /* line 88, ../../sass/sass/_home.scss */
-  .cate p {
+  /* line 95, ../../sass/sass/_home.scss */
+  .serviceCate p {
     padding: 20px;
     font-size: 14px;
   }
-
-  /* line 93, ../../sass/sass/_home.scss */
-  .faq {
+  /* line 99, ../../sass/sass/_home.scss */
+  .serviceCate li {
+    float: left;
+    margin: 10px;
+  }
+  /* line 104, ../../sass/sass/_home.scss */
+  .serviceCate .faq {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: yellow;
   }
-
-  /* line 99, ../../sass/sass/_home.scss */
-  .tutorialvideo {
+  /* line 110, ../../sass/sass/_home.scss */
+  .serviceCate .tutorialvideo {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: red;
   }
-
-  /* line 106, ../../sass/sass/_home.scss */
-  .documentdownload {
+  /* line 117, ../../sass/sass/_home.scss */
+  .serviceCate .documentdownload {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: #05FEF6;
   }
-
-  /* line 112, ../../sass/sass/_home.scss */
-  .productwarranty {
+  /* line 123, ../../sass/sass/_home.scss */
+  .serviceCate .productwarranty {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: #08F813;
   }
-
-  /* line 119, ../../sass/sass/_home.scss */
-  .button {
+  /* line 130, ../../sass/sass/_home.scss */
+  .serviceCate .button {
     width: 275px;
     height: 50px;
     background-color: white;
@@ -213,41 +213,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 2px solid #C3C3C3;
     border-radius: 10px;
   }
-  /* line 126, ../../sass/sass/_home.scss */
-  .button .bilog {
+  /* line 137, ../../sass/sass/_home.scss */
+  .serviceCate .button .bilog {
     margin: 3px 10px 0px 20px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     background-color: #34495E;
   }
-  /* line 133, ../../sass/sass/_home.scss */
-  .button li {
+  /* line 144, ../../sass/sass/_home.scss */
+  .serviceCate .button li {
     float: left;
   }
-  /* line 137, ../../sass/sass/_home.scss */
-  .button .msg {
+  /* line 148, ../../sass/sass/_home.scss */
+  .serviceCate .button .msg {
     margin: 13px 5px;
     font-size: 16px;
   }
-
-  /* line 142, ../../sass/sass/_home.scss */
-  .heading {
+  /* line 153, ../../sass/sass/_home.scss */
+  .serviceCate .heading {
     font-size: 18px;
     font-weight: bold;
     font-family: "Helvetica" ,"Arial";
     padding: 20px;
   }
-
-  /* line 148, ../../sass/sass/_home.scss */
-  p {
+  /* line 159, ../../sass/sass/_home.scss */
+  .serviceCate p {
     padding: 20px;
     font-size: 15px;
     text-align: center;
   }
-
-  /* line 153, ../../sass/sass/_home.scss */
-  .logo {
+  /* line 164, ../../sass/sass/_home.scss */
+  .serviceCate .logo {
     height: 100px;
     width: 60px;
   }

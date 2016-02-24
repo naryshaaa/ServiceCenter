@@ -1,69 +1,91 @@
 @(message: String)
 @scripts =  {
+    <script type="text/javascript">
 
+    website.controller('myCtrl', function($scope) {
+
+        $scope.serviceHome = [
+            {
+                  des: "FAQ",
+                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                  className: "faq",
+            },
+            {
+                  des: "Tutorial Video",
+                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                  className: "tutorialvideo",
+            },
+            {
+                  des: "Download & Document",
+                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                  className: "documentdownload",
+            },
+            {
+                  des: "Product Warranty",
+                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                  className: "productwarranty",
+            }
+        ];
+        $scope.buttons = [
+            {
+                 des: "Register Your Product",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 className: "button",
+            },
+            {
+                 des: "Contact Support",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 className: "button",
+            }
+        ];
+    });
+
+    </script>
 
 }
-@main("Welcome to Play", scripts) {
-
-<div class="row">
-    <div class="col-md-12 adjust">
-        <center>
-            <img class="img-responsive" src="@routes.Assets.versioned("images/Thankgiving Long Banner.jpg")">
-        </center>
-    </div>
-</div>
-
-<div class="container"><center>
+@main("Service Center 2.0", scripts) {
+<div class="serviceCate" ng-controller="myCtrl"><center>
 
     <div class="row">
-        <div class="col-md-12 heading">
-            You may want to know
-        </div>
-    </div><br>
-
-    <div class="cate">
-        <div class="row">
-            <div class="col-xs-6 col-md-3">
-                <div class="faq pointer"></a></div>
-                <p><a href="http://support.xyzprinting.com/us_en/Help/Faq">FAQ</a></p>
-            </div>
-
-            <div class="col-xs-6 col-md-3 pointer">
-                <div class="tutorialvideo"></div>
-                <p>Tutorial Video</p>
-            </div>
-
-            <div class="col-xs-6 col-md-3 pointer">
-                <div class="documentdownload"></div>
-                <p>Download & Document</p>
-            </div>
-
-            <div class="col-xs-6 col-md-3 pointer">
-                <div class="productwarranty"></div>
-                <p>Product Warranty</p>
-            </div>
+        <div class="col-md-12 adjust">
+            <center>
+                <img class="img-responsive" src="@routes.Assets.versioned("images/Thankgiving Long Banner.jpg")">
+            </center>
         </div>
     </div>
-    <div class="row">
 
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="button pointer">
-                <ul>
-                    <li class="bilog"></li>
-                    <li class="msg">Register Your Product</li>
-                </ul>
+    <div class="container">
+
+        <section class="row col-md-12 heading">
+            <span>You may want to know</span>
+            <div class="clear"> </div>
+        </section>
+
+        <section class="sub-cate">
+            <div class="row">
+                <div ng-repeat="item in serviceHome" class="col-xs-6 col-md-3" ng-cloak>
+                    <div class="{{item.className}}"></div>
+                    <a ng-href="{item.url}">
+                        <p ng-bind="item.des"></p>
+                    </a>
+                </div>
             </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-6">
-            <div class="button pointer">
-                <ul>
-                    <li class="bilog"></li>
-                    <li class="msg">Contact Support</li>
-                </ul>
+            <div class="row">
+                <div ng-repeat="item in buttons" class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="{{item.className}}">
+                        <ul>
+                            <li class="bilog"></li>
+                            <li class="msg">
+                                <a ng-href="{item.url}">
+                                    <span ng-bind="item.des"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-
+        </section>
+        
     </div>
 </center>
 </div>
