@@ -6,34 +6,34 @@
 
         $scope.serviceHome = [
             {
-                  des: "FAQ",
-                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                  des: "@Messages("faq.des")",
+                  url: "/faq",
                   className: "faq",
             },
             {
-                  des: "Tutorial Video",
+                  des: "@Messages("tutorial.des")",
                   url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
                   className: "tutorialvideo",
             },
             {
-                  des: "Download & Document",
+                  des: "@Messages("download.des")",
                   url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
                   className: "documentdownload",
             },
             {
-                  des: "Product Warranty",
+                  des: "@Messages("warranty.des")",
                   url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
                   className: "productwarranty",
             }
         ];
         $scope.buttons = [
             {
-                 des: "Register Your Product",
+                 des: "@Messages("register.des")",
                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
                  className: "button",
             },
             {
-                 des: "Contact Support",
+                 des: "@Messages("contact.des")",
                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
                  className: "button",
             }
@@ -57,7 +57,7 @@
     <div class="container">
 
         <section class="row col-md-12 heading">
-            <span>You may want to know</span>
+            <span>@Messages("Service.Center")</span>
             <div class="clear"> </div>
         </section>
 
@@ -65,7 +65,7 @@
             <div class="row">
                 <div ng-repeat="item in serviceHome" class="col-xs-6 col-md-3" ng-cloak>
                     <div class="{{item.className}}"></div>
-                    <a ng-href="{item.url}">
+                    <a ng-href="{{item.url}}">
                         <p ng-bind="item.des"></p>
                     </a>
                 </div>
@@ -76,7 +76,7 @@
                         <ul>
                             <li class="bilog"></li>
                             <li class="msg">
-                                <a ng-href="{item.url}">
+                                <a ng-href="{{item.url}}">
                                     <span ng-bind="item.des"></span>
                                 </a>
                             </li>

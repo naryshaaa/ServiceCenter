@@ -1,0 +1,31 @@
+#---------------------- Service Center 2.0 ----------------
+#---------------------English i18n by Narish---------------
+
+#----Title---
+Service.Center= You may want to know
+
+
+#---- FAQ
+
+faq.des = FAQ
+
+
+#---- Tutorial
+
+tutorial.des = Tutorial Video
+
+#---- Tutorial
+
+download.des = Download & Document
+
+#---- Warranty
+
+warranty.des= Product Warranty
+
+#---- Register Your Product
+
+register.des=Register Your Product
+
+#Contact Support
+
+contact.des = Contact Support
