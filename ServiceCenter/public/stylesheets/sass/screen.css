@@ -67,13 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 3, ../../sass/sass/_home.scss */
-.serviceCate .heading {
+/* line 1, ../../sass/sass/_home.scss */
+.heading {
   font-size: 25px;
   font-weight: bold;
   font-family: "Helvetica", "Arial";
   padding: 20px;
 }
+
 /* line 9, ../../sass/sass/_home.scss */
 .serviceCate p {
   padding: 20px;
@@ -248,4 +249,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 100px;
     width: 60px;
   }
+}
+/* line 4, ../../sass/sass/_faq.scss */
+.faqSection .verticalHead li {
+  width: 200px;
+  height: 100%;
+  background-color: white;
+  margin: 20px;
+  border: 2px solid #C3C3C3;
+  border-radius: 30px;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: bold;
 }

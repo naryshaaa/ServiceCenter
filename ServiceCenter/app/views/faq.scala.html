@@ -1,6 +1,76 @@
 @(message: String)
+@scripts =  {
 
 
-@main("Service Center 2.0 FAQ") {
+}
 
+@main("Service Center 2.0 FAQ", scripts) {
+<div class="faqSection">
+    <div class="container">
+        <section class="row col-md-12 text-center heading">
+            <span>FAQ</span>
+        </section>
+        <div class="clear"></div>
+
+        <section class="row col-md-3 verticalHead text-center">
+            <ul>
+                <li>FAQ category 01</li>
+                <li>FAQ category 02 in two line</li>
+                <li>FAQ category 03 in two line</li>
+                <li>FAQ category 04</li>
+            </ul>
+        </section>
+
+        <section class="row col-md-9">
+            <div class="col-md-12 text-left heading">FAQ category 01</div>
+            <div class="clear"></div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                <span class="glyphicon glyphicon-plus"></span> Title01
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <span class="glyphicon glyphicon-plus"></span> Title02
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <span class="glyphicon glyphicon-plus"></span> Title03
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</div>
 }
