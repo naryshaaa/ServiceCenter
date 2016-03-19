@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -73,40 +73,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   font-family: "Helvetica", "Arial";
   padding: 20px;
+  color: #fff;
 }
 
-/* line 9, ../../sass/sass/_home.scss */
+/* line 10, ../../sass/sass/_home.scss */
 .serviceCate p {
   padding: 20px;
   font-size: 20px;
 }
-/* line 13, ../../sass/sass/_home.scss */
+/* line 14, ../../sass/sass/_home.scss */
 .serviceCate li {
   float: left;
   margin: 20px 63px;
 }
-/* line 17, ../../sass/sass/_home.scss */
+/* line 18, ../../sass/sass/_home.scss */
 .serviceCate .faq {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: orange;
 }
-/* line 23, ../../sass/sass/_home.scss */
+/* line 24, ../../sass/sass/_home.scss */
 .serviceCate .tutorialvideo {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: #490560;
 }
-/* line 30, ../../sass/sass/_home.scss */
+/* line 31, ../../sass/sass/_home.scss */
 .serviceCate .documentdownload {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   background-color: pink;
 }
-/* line 36, ../../sass/sass/_home.scss */
+/* line 37, ../../sass/sass/_home.scss */
 .serviceCate .productwarranty {
   border-radius: 50%;
   width: 150px;
@@ -114,7 +115,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: green;
 }
 
-/* line 44, ../../sass/sass/_home.scss */
+/* line 45, ../../sass/sass/_home.scss */
 .button {
   width: 450px;
   height: 75px;
@@ -122,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 20px 0px;
   border: 2px solid #C3C3C3;
 }
-/* line 50, ../../sass/sass/_home.scss */
+/* line 51, ../../sass/sass/_home.scss */
 .button .bilog {
   margin: 3px 10px 0px 20px;
   border-radius: 50%;
@@ -130,23 +131,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 60px;
   background-color: #34495E;
 }
-/* line 57, ../../sass/sass/_home.scss */
+/* line 58, ../../sass/sass/_home.scss */
 .button li {
   float: left;
 }
-/* line 61, ../../sass/sass/_home.scss */
+/* line 62, ../../sass/sass/_home.scss */
 .button .msg {
   margin: 23px 10px;
   font-size: 20px;
 }
 
-/* line 67, ../../sass/sass/_home.scss */
+/* line 68, ../../sass/sass/_home.scss */
 .pointer {
   cursor: pointer;
 }
 
 @media (max-width: 767px) {
-  /* line 74, ../../sass/sass/_home.scss */
+  /* line 75, ../../sass/sass/_home.scss */
   .button {
     width: 300px;
     height: 75px;
@@ -156,56 +157,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-top: 10px;
     border-radius: 10px;
   }
-  /* line 82, ../../sass/sass/_home.scss */
+  /* line 83, ../../sass/sass/_home.scss */
   .button li {
     float: left;
   }
-  /* line 86, ../../sass/sass/_home.scss */
+  /* line 87, ../../sass/sass/_home.scss */
   .button .msg {
     margin: 25px 5px;
     font-size: 18px;
   }
 }
 @media (max-width: 480px) {
-  /* line 95, ../../sass/sass/_home.scss */
+  /* line 96, ../../sass/sass/_home.scss */
   .serviceCate p {
     padding: 20px;
     font-size: 14px;
   }
-  /* line 99, ../../sass/sass/_home.scss */
+  /* line 100, ../../sass/sass/_home.scss */
   .serviceCate li {
     float: left;
     margin: 10px;
   }
-  /* line 104, ../../sass/sass/_home.scss */
+  /* line 105, ../../sass/sass/_home.scss */
   .serviceCate .faq {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: yellow;
   }
-  /* line 110, ../../sass/sass/_home.scss */
+  /* line 111, ../../sass/sass/_home.scss */
   .serviceCate .tutorialvideo {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: red;
   }
-  /* line 117, ../../sass/sass/_home.scss */
+  /* line 118, ../../sass/sass/_home.scss */
   .serviceCate .documentdownload {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: #05FEF6;
   }
-  /* line 123, ../../sass/sass/_home.scss */
+  /* line 124, ../../sass/sass/_home.scss */
   .serviceCate .productwarranty {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: #08F813;
   }
-  /* line 130, ../../sass/sass/_home.scss */
+  /* line 131, ../../sass/sass/_home.scss */
   .serviceCate .button {
     width: 275px;
     height: 50px;
@@ -214,7 +215,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     border: 2px solid #C3C3C3;
     border-radius: 10px;
   }
-  /* line 137, ../../sass/sass/_home.scss */
+  /* line 138, ../../sass/sass/_home.scss */
   .serviceCate .button .bilog {
     margin: 3px 10px 0px 20px;
     border-radius: 50%;
@@ -222,29 +223,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     height: 40px;
     background-color: #34495E;
   }
-  /* line 144, ../../sass/sass/_home.scss */
+  /* line 145, ../../sass/sass/_home.scss */
   .serviceCate .button li {
     float: left;
   }
-  /* line 148, ../../sass/sass/_home.scss */
+  /* line 149, ../../sass/sass/_home.scss */
   .serviceCate .button .msg {
     margin: 13px 5px;
     font-size: 16px;
   }
-  /* line 153, ../../sass/sass/_home.scss */
+  /* line 154, ../../sass/sass/_home.scss */
   .serviceCate .heading {
     font-size: 18px;
     font-weight: bold;
     font-family: "Helvetica" ,"Arial";
     padding: 20px;
   }
-  /* line 159, ../../sass/sass/_home.scss */
+  /* line 160, ../../sass/sass/_home.scss */
   .serviceCate p {
     padding: 20px;
     font-size: 15px;
     text-align: center;
   }
-  /* line 164, ../../sass/sass/_home.scss */
+  /* line 165, ../../sass/sass/_home.scss */
   .serviceCate .logo {
     height: 100px;
     width: 60px;
@@ -255,10 +256,316 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 200px;
   height: 100%;
   background-color: white;
-  margin: 20px;
+  margin: 20px 0px;
   border: 2px solid #C3C3C3;
   border-radius: 30px;
   padding: 20px 30px;
   font-size: 16px;
   font-weight: bold;
+}
+
+/* line 1, ../../sass/sass/_download.scss */
+.breadcrumbsContainer {
+  width: 100%;
+  z-index: 999;
+  background: #e1e1e1;
+  position: relative;
+  font-size: 14px;
+}
+/* line 7, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: Helvetica, Arial;
+}
+/* line 12, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul {
+  margin: 0;
+  height: 40px;
+}
+/* line 15, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul .hasSubmenu:hover {
+  background-image: url(/assets/images/breadcrumbs-caret-up.png);
+  background-size: 40px 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 21, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li {
+  display: inline-block;
+}
+/* line 23, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li:hover > .submenu {
+  display: block;
+  padding: 15px;
+}
+/* line 27, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu {
+  padding: 0;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  background: #45aad9;
+}
+/* line 36, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu div {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* line 40, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu div .submenudiv1 {
+  float: left;
+  width: 100%;
+  max-width: 320px;
+}
+/* line 45, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu div ul {
+  width: 100%;
+}
+/* line 47, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu div ul li {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  padding-left: 30px;
+}
+/* line 52, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu div ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+/* line 55, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li .submenu div ul li a:hover {
+  color: #fbb03b;
+  border-bottom: solid 3pt #fbb03b;
+}
+/* line 64, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li a {
+  display: block;
+  text-decoration: none;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  color: #5b9cc7;
+}
+/* line 71, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li a:hover {
+  text-decoration: none;
+}
+/* line 74, ../../sass/sass/_download.scss */
+.breadcrumbsContainer .breadcrumbs ul li a span {
+  margin: 4px;
+}
+
+/* line 82, ../../sass/sass/_download.scss */
+.mainContainer {
+  background: url("https://twportal.blob.core.windows.net/images-servicecenter/general/bg_main.jpg");
+  background-size: 100% auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* line 92, ../../sass/sass/_download.scss */
+.downloadSection {
+  min-height: 100vh;
+}
+/* line 95, ../../sass/sass/_download.scss */
+.downloadSection .container .heading {
+  padding: 60px 0px 60px 0;
+}
+/* line 97, ../../sass/sass/_download.scss */
+.downloadSection .container .heading p {
+  text-align: center;
+}
+/* line 99, ../../sass/sass/_download.scss */
+.downloadSection .container .heading p span {
+  background-color: #fff;
+  padding: 22px 18px 18px 22px;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 20px;
+}
+/* line 106, ../../sass/sass/_download.scss */
+.downloadSection .container .heading p span font {
+  color: #e89425;
+  font-size: 32px;
+  background: -webkit-linear-gradient(right, #f5d2a3, #e89425);
+  background: linear-gradient(right, #f5d2a3, #e89425);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* line 117, ../../sass/sass/_download.scss */
+.downloadSection .container .leftPart {
+  width: 100%;
+  min-height: 100px;
+}
+/* line 121, ../../sass/sass/_download.scss */
+.downloadSection .container .leftPart ul li {
+  border: solid 2pt #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+/* line 127, ../../sass/sass/_download.scss */
+.downloadSection .container .leftPart ul li a {
+  font-weight: bold;
+  color: #45aad9;
+}
+/* line 130, ../../sass/sass/_download.scss */
+.downloadSection .container .leftPart ul li a div {
+  width: 100%;
+  padding: 15px 15px 15px 25px;
+}
+/* line 134, ../../sass/sass/_download.scss */
+.downloadSection .container .leftPart ul li a:hover {
+  text-decoration: none;
+}
+/* line 141, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart {
+  width: 100%;
+  min-height: 100px;
+}
+/* line 144, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+/* line 147, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  padding: 0px 0 25px 0;
+}
+/* line 154, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel {
+  border-radius: 0 !important;
+  margin-bottom: 15px !important;
+  background-color: #34404b !important;
+}
+/* line 159, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel .panel-heading {
+  background-color: #34404b !important;
+  padding: 20px !important;
+  margin-left: 20px;
+  border-radius: 0 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+/* line 166, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel .panel-heading .panel-title {
+  padding-left: 30px;
+  font-weight: bold !important;
+}
+/* line 171, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel .showPanel {
+  background-image: url("http://xyzwebsite.blob.core.windows.net/service-center/ic_plus.png") !important;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+}
+/* line 177, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel .hidePanel {
+  background-image: url("http://xyzwebsite.blob.core.windows.net/service-center/ic_minus.png") !important;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+}
+/* line 183, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel a {
+  text-decoration: none !important;
+}
+/* line 185, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel a:focus {
+  text-decoration: none !important;
+}
+/* line 188, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel a:active {
+  text-decoration: none !important;
+}
+/* line 193, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel-default {
+  border: none !important;
+}
+/* line 196, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel-body {
+  padding: 0 !important;
+  border: 0 !important;
+  background: #546577 !important;
+}
+/* line 200, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel-body ul {
+  padding: 0;
+  width: 100%;
+  background: #546577;
+}
+/* line 204, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel-body ul li {
+  display: inline-block;
+  padding: 15px;
+  border-right: solid 1pt #34404b;
+  border-bottom: solid 1pt #34404b;
+  line-height: 28px;
+  margin-right: -4px;
+  color: #fff;
+  width: 22%;
+  text-align: center;
+  vertical-align: top;
+}
+/* line 215, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel-body ul li:last-of-type {
+  border-right: none;
+  width: 12%;
+  line-height: 18px;
+}
+/* line 220, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList .panel-group .panel-body ul li a {
+  color: #45A9DA;
+  font-size: 24px;
+}
+/* line 229, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList a:hover {
+  text-decoration: none;
+}
+/* line 232, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .osList a:active {
+  text-decoration: none !important;
+}
+/* line 237, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .specialInfo {
+  width: 100%;
+  padding: 30px;
+  border: solid 2pt #fff;
+  margin: 10px 0 40px 0;
+}
+/* line 242, ../../sass/sass/_download.scss */
+.downloadSection .container .rightPart .specialInfo p {
+  color: #fff;
+}
+
+@media all and (max-width: 480px) and (min-width: 320px) {
+  /* line 251, ../../sass/sass/_download.scss */
+  .heading {
+    font-size: 14px;
+  }
+
+  /* line 254, ../../sass/sass/_download.scss */
+  .downloadSection .container .heading p span {
+    padding: 32px 18px 18px 22px;
+  }
+
+  /* line 257, ../../sass/sass/_download.scss */
+  .downloadSection .container .rightPart .osList .panel-group .panel-body ul li {
+    padding: 10px 0px 10px 0px;
+  }
 }

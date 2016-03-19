@@ -5,6 +5,7 @@
 # Home page
 GET     /                              controllers.Application.index()
 GET     /faq                           controllers.Application.faq()
+GET     /download                      controllers.Application.download()
 
 
 # Map static resources from the /public folder to the /assets URL path

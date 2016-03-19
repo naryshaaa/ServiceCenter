@@ -1,0 +1,260 @@
+.breadcrumbsContainer{
+  width:100%;
+  z-index:999;
+  background:#e1e1e1;
+  position:relative;
+  font-size:14px;
+  .breadcrumbs{
+    width:100%;
+    max-width:960px;
+    margin:0 auto;
+    font-family: Helvetica, Arial;
+    ul{
+      margin: 0;
+      height: 40px;
+      .hasSubmenu:hover{
+         background-image:url(/assets/images/breadcrumbs-caret-up.png);
+         background-size:40px 40px;
+         background-position:center;
+         background-repeat:no-repeat;
+       }
+      li{
+        display:inline-block;
+        &:hover > .submenu{
+          display:block;
+          padding:15px;
+        }
+        .submenu{
+           padding:0;
+           display:none;
+           width: 100%;
+           position: absolute;
+           top: 40px;
+           left: 0px;
+           background:#45aad9;
+
+           div{
+              width:100%;
+              max-width:960px;
+              margin:0 auto;
+              .submenudiv1{
+                  float:left;
+                  width:100%;
+                  max-width:320px;
+                }
+              ul{
+                  width:100%;
+                  li{
+                     display:block;
+                     line-height:40px;
+                     height:40px;
+                     padding-left:30px;
+                    a{
+                      color:#fff;
+                      font-weight:bold;
+                      &:hover{
+                        color:#fbb03b;
+                        border-bottom:solid 3pt #fbb03b;
+                      }
+                    }
+                  }
+               }
+           }
+        }
+        a{
+          display:block;
+          text-decoration:none;
+          float: left;
+          height: 40px;
+           line-height: 40px;
+          color:#5b9cc7;
+          &:hover{
+            text-decoration:none;
+          }
+          span{
+            margin:4px;
+          }
+        }
+      }
+    }
+  }
+}
+.mainContainer{
+     background:url("https://twportal.blob.core.windows.net/images-servicecenter/general/bg_main.jpg");
+        background-size:100% auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+}
+.downloadSection{
+    min-height:100vh;
+    .container{
+        .heading{
+            padding:60px 0px 60px 0;
+            p{
+                text-align:center;
+                span{
+                    background-color:#fff;
+                    padding:22px 18px 18px 22px;
+                    border-radius:50%;
+                    vertical-align:middle;
+                    text-align:center;
+                    margin-right:20px;
+                    font{
+                        color:#e89425;
+                        font-size:32px;
+                        background: -webkit-linear-gradient(right, #f5d2a3, #e89425);
+                        background: linear-gradient(right, #f5d2a3, #e89425);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+        .leftPart{
+            width:100%;
+            min-height:100px;
+            ul{
+                li{
+                    border:solid 2pt #666;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    border-radius: 30px;
+                    margin-bottom:20px;
+                    a{
+                        font-weight:bold;
+                        color:#45aad9;
+                         div{
+                            width:100%;
+                            padding:15px 15px 15px 25px;
+                        }
+                        &:hover{
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .rightPart{
+            width:100%;
+            min-height:100px;
+            .osList{
+                margin-bottom:30px;
+                padding-top:10px;
+                p{
+                    font-weight:bold;
+                    font-size:18px;
+                    color:#fff;
+                    padding:0px 0 25px 0;
+                }
+                .panel-group{
+                    .panel{
+                        border-radius:0 !important;
+                        margin-bottom:15px !important;
+                        background-color:#34404b !important;
+
+                        .panel-heading{
+                            background-color:#34404b !important;
+                            padding:20px !important;
+                            margin-left:20px;
+                            border-radius:0 !important;
+                            color:#fff !important;
+                            font-weight:bold;
+                            .panel-title{
+                                padding-left:30px;
+                                font-weight:bold !important;
+                            }
+                        }
+                        .showPanel{
+                            background-image:url('http://xyzwebsite.blob.core.windows.net/service-center/ic_plus.png') !important;
+                            background-position:left;
+                            background-repeat:no-repeat;
+                            background-size:32px 32px;
+                        }
+                        .hidePanel{
+                            background-image:url('http://xyzwebsite.blob.core.windows.net/service-center/ic_minus.png') !important;
+                            background-position:left;
+                            background-repeat:no-repeat;
+                            background-size:32px 32px;
+                        }
+                        a{
+                            text-decoration:none !important;
+                             &:focus{
+                                text-decoration:none !important;
+                            }
+                            &:active{
+                                text-decoration:none !important;
+                            }
+                        }
+                        }
+                    .panel-default{
+                        border:none !important;
+                     }
+                    .panel-body{
+                        padding:0 !important;
+                        border:0 !important;
+                        background:#546577 !important;
+                        ul{
+                            padding:0;
+                            width:100%;
+                            background:#546577;
+                            li{
+                                display:inline-block;
+                                padding:15px;
+                                border-right :solid 1pt #34404b;
+                                border-bottom :solid 1pt #34404b;
+                                line-height:28px;
+                                margin-right:-4px;
+                                color:#fff;
+                                width:22%;
+                                text-align:center;
+                                vertical-align:top;
+                                &:last-of-type{
+                                    border-right:none;
+                                    width:12%;
+                                    line-height:18px;
+                                }
+                                a{
+                                    color:#45A9DA;
+                                    font-size:24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        text-decoration:none;
+                    }
+                    &:active{
+                        text-decoration:none !important;
+                    }
+                }
+            }
+            .specialInfo{
+                width:100%;
+                padding:30px;
+                border:solid 2pt #fff;
+                margin:10px 0 40px 0;
+                p{
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) and (min-width: 320px) {
+
+    .heading{
+        font-size:14px;
+    }
+    .downloadSection .container .heading p span{
+        padding: 32px 18px 18px 22px;
+    }
+    .downloadSection .container .rightPart .osList .panel-group .panel-body ul li{
+        padding:10px 0px 10px 0px;
+    }
+}
