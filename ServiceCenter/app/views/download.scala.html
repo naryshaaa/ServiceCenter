@@ -1,0 +1,307 @@
+@(message: String)
+@scripts =  {
+<script>
+    website.controller('downloadCtrl', function($scope) {
+        $scope.windowsItems = [
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/Windows.jpg'
+            },
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/Windows.jpg'
+            },
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/Windows.jpg'
+            },
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/Windows.jpg'
+            },
+        ];
+        $scope.iosItems = [
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/IOS.png'
+            },
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/IOS.png'
+            },
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/IOS.png'
+            },
+            {
+                item1:'Item1',
+                item2:'Item2',
+                item3:'Item3',
+                item4:'Item4',
+                item5:'/assets/images/IOS.png'
+            },
+        ];
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.collapse').on('shown.bs.collapse', function(){
+            $(this).parent().find(".showPanel").removeClass("showPanel").addClass("hidePanel");
+        }).on('hidden.bs.collapse', function(){
+            $(this).parent().find(".hidePanel").removeClass("hidePanel").addClass("showPanel");
+        });
+    });
+
+    // FUNCTION FOR SMOOTH SCROLLING
+
+    $(function() {
+      $('.targetOS').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 1000);
+            return false;
+        });
+    });
+</script>
+}
+@main("XYZ Service Center Download", scripts) {
+<section class="breadcrumbsContainer">
+    <div class="breadcrumbs">
+        <ul>
+            <li><a href="#">Home ></a></li>
+            <li><a href="#" class="hasSubmenu">Download & Document<span class="glyphicon glyphicon-triangle-bottom"></span> ></a>
+                <div class="submenu" id="submenuDiv1">
+                    <div>
+                        <div class="submenudiv1">
+                            <ul>
+                                <li><a href="#" >FAQ</a></li>
+                                <li ><a href="#" >Tutorial Video</a></li>
+                                <li ><a href="#" >Download & Document</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenudiv1">
+                            <ul>
+                                <li><a href="#" >Product Warranty</a></li>
+                                <li ><a href="#" >Register Your Product</a></li>
+                                <li ><a href="#" >Contact Our Customer Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearFixx"></div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" class="hasSubmenu">da Vinci 1.0 <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                <div class="submenu">
+                    <div>
+                        <div class="submenudiv1">
+                            <ul>
+                                <li><a href="#" >da Vinci 1.0</a></li>
+                                <li ><a href="#" >da Vinci Pro 1.0</a></li>
+                                <li ><a href="#" >da Vinci 1.0</a></li>
+                            </ul>
+                        </div>
+                        <div class="submenudiv1">
+                            <ul>
+                                <li><a href="#" >3D Scan</a></li>
+                                <li ><a href="#" >da Vinci 1.0</a></li>
+                                <li ><a href="#" >da Vinci 1.0</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearFixx"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="downloadSection mainContainer">
+    <div class="container">
+        <div class="heading text-center">
+            <p><span><font class="glyphicon glyphicon-save"></font></span>Download & Document</p>
+        </div>
+
+        <section class="col-md-3">
+            <div class="leftPart">
+                <ul>
+                    <li>
+                        <a class="targetOS" href="#Windows">
+                            <div>Windows</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="targetOS" href="#IOS">
+                            <div>IOS</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="col-md-9">
+            <div class="rightPart">
+                <div id="Windows" class="osList">
+                    <p>Windows</p>
+                    <div class="panel-group" id="accordion1">
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+                                <div class="panel-heading hidePanel">
+                                    <h4 class="panel-title">
+                                            Title01
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body"  ng-controller="downloadCtrl">
+                                    <ul ng-repeat="x in windowsItems">
+                                        <li >{{ x.item1 }}</li>
+                                        <li >{{ x.item2 }}</li>
+                                        <li >{{ x.item3 }}</li>
+                                        <li >{{ x.item4 }}</li>
+                                        <li ><a href="{{ x.item5 }}" download><span class="glyphicon glyphicon-arrow-down"></span></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+                                <div class="panel-heading showPanel">
+                                    <h4 class="panel-title">
+                                        Title02
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body"  ng-controller="downloadCtrl">
+                                    <ul ng-repeat="x in windowsItems">
+                                        <li >{{ x.item1 }}</li>
+                                        <li >{{ x.item2 }}</li>
+                                        <li >{{ x.item3 }}</li>
+                                        <li >{{ x.item4 }}</li>
+                                        <li ><a href="{{ x.item5 }}" download><span class="glyphicon glyphicon-arrow-down"></span></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#collapse3">
+                                <div class="panel-heading showPanel">
+                                    <h4 class="panel-title">
+                                        Title03
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body"  ng-controller="downloadCtrl">
+                                    <ul ng-repeat="x in windowsItems">
+                                        <li >{{ x.item1 }}</li>
+                                        <li >{{ x.item2 }}</li>
+                                        <li >{{ x.item3 }}</li>
+                                        <li >{{ x.item4 }}</li>
+                                        <li ><a href="{{ x.item5 }}" download><span class="glyphicon glyphicon-arrow-down"></span></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="IOS" class="osList">
+                    <p>IOS</p>
+                    <div class="panel-group" id="accordion2">
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
+                                <div class="panel-heading hidePanel">
+                                    <h4 class="panel-title">
+                                        Title01
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse4" class="panel-collapse collapse in">
+                                <div class="panel-body"  ng-controller="downloadCtrl">
+                                    <ul ng-repeat="x in iosItems">
+                                        <li >{{ x.item1 }}</li>
+                                        <li >{{ x.item2 }}</li>
+                                        <li >{{ x.item3 }}</li>
+                                        <li >{{ x.item4 }}</li>
+                                        <li ><a href="{{ x.item5 }}" download><span class="glyphicon glyphicon-arrow-down"></span></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse5">
+                                <div class="panel-heading showPanel">
+                                    <h4 class="panel-title">
+                                        Title02
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body"  ng-controller="downloadCtrl">
+                                    <ul ng-repeat="x in iosItems">
+                                        <li >{{ x.item1 }}</li>
+                                        <li >{{ x.item2 }}</li>
+                                        <li >{{ x.item3 }}</li>
+                                        <li >{{ x.item4 }}</li>
+                                        <li ><a href="{{ x.item5 }}" download><span class="glyphicon glyphicon-arrow-down"></span></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion2" href="#collapse6">
+                                <div class="panel-heading showPanel">
+                                    <h4 class="panel-title">
+                                        Title03
+                                    </h4>
+                                </div>
+                            </a>
+                            <div id="collapse6" class="panel-collapse collapse">
+                                <div class="panel-body"  ng-controller="downloadCtrl">
+                                    <ul ng-repeat="x in iosItems">
+                                        <li >{{ x.item1 }}</li>
+                                        <li >{{ x.item2 }}</li>
+                                        <li >{{ x.item3 }}</li>
+                                        <li >{{ x.item4 }}</li>
+                                        <li ><a href="{{ x.item5 }}" download><span class="glyphicon glyphicon-arrow-down"></span></a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specialInfo">
+                    <p>Special Information</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+}

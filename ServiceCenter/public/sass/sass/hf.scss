@@ -87,6 +87,9 @@ header {
           height: 30px;
           margin: 25px 0 5px;
           padding: 0 15px;
+          &:hover{
+            text-decoration:none;
+          }
         }
 
         &.active {
@@ -289,6 +292,9 @@ header {
         width: 100%;
         height: 100%;
         display: block;
+        &:hover{
+          text-decoration:none !important;
+        }
       }
       &.userIsSign {
         &:hover {
@@ -327,6 +333,7 @@ header {
           //   transition: 0.3s;
           // }
           a {
+            text-decoration:none !important;
             .signin{
               //border: 1px solid rgba(0,0,0,0);
               color: $header-color-2;
@@ -339,6 +346,9 @@ header {
           padding: 7px;
           // border: 1px solid $header-color-2;
           // @include border-radius(25px);
+          &:hover{
+            text-decoration:none !important;
+          }
         }
       }
       &.isHover {
@@ -347,6 +357,7 @@ header {
           height: 36+57*$itemNumber+13px;
           transition: 0.5s;
           z-index: 11;
+          text-decoration:none !important;
         }
       }
       &.notHover {

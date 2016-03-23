@@ -21,4 +21,8 @@ public class Application extends Controller {
 
         return ok(tutorial.render(""));
     }
+    public Result download() {
+
+        return ok(download.render(""));
+    }
 }
