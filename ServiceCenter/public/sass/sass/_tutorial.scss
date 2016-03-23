@@ -1,0 +1,75 @@
+@import "_common.scss";
+
+.tutorial-cate{
+    #tvtile{
+        img{
+            padding: 10px !important;
+            border: none !important;
+        }
+    .play {
+    				position: absolute;
+    				z-index: 5;
+    				bottom: 20%;
+    				left: 10%;
+    				text-align: center;
+    				background: rgba($white, .4);
+    				padding: 10px;
+    				border-radius: 60px;
+    				width: 34px;
+    				height: 35px;
+                    .ic{
+                        top: 0px !important;
+                        left: 0px !important;
+                    }
+    			}
+
+
+    }
+    #tvgrid{
+        li{
+            background-color: #35404c;
+            border: solid 2px $white;
+            height: 50px;
+            color: $white;
+            &:nth-child(1) {
+                background-color: $white;
+            }
+            p{
+                padding: 15px 10px;
+                font-size: $fontsize-s;
+            }
+
+        }
+    }
+}
+
+.modal {
+			text-align: center;
+			margin: 0 auto;
+			.modal-dialog {
+				width: 50%;
+			}
+			.modal-body {
+				text-align: left;
+				line-height: 1.5;
+				a.highline {
+					color: $highline;
+				}
+			}
+			.page {
+				color: $deep-gray;
+			}
+			.btn {
+				margin-bottom: 0;
+				width: auto;
+			}
+		}
+
+		.modal-body {
+            				text-align: center;
+            				iframe {
+            						width: 90%;
+            						height: 480px;
+            						padding: 15px;
+            				}
+            }

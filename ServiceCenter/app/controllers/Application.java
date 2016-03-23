@@ -16,4 +16,9 @@ public class Application extends Controller {
 
         return ok(faq.render(""));
     }
+
+    public Result tutorial() {
+
+        return ok(tutorial.render(""));
+    }
 }

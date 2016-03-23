@@ -20,8 +20,14 @@ html, body {
 body {
   width: 100%;
   min-height: 100%;
-  background: #fff;
+  background: url(https://twportal.blob.core.windows.net/images-servicecenter/general/bg_main.jpg)no-repeat center center fixed;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
+
 .standardpage {
   max-width: 960px;
   width:100%;
@@ -409,7 +415,7 @@ footer {
   width: 100%;
   padding: 20px 0;
   font-family: $font-2;
-  background: rgba(white, .7);
+  background: rgba(white, 1);
   @include box-shadow(0 0 10px rgba(black, .1));
   a {
     color: $header-color-1;
@@ -554,3 +560,16 @@ footer {
     }
   }
 }
+
+button.close.close-customize{
+        padding: 2px 6px;
+        cursor: pointer;
+        background: none repeat scroll 0% 0% #000;
+        border: 4px solid #FFF;
+        border-radius: 17px;
+        position: absolute;
+        margin-left: -30px;
+        opacity: 1;
+        color: white;
+}
+

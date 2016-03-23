@@ -1,6 +1,6 @@
 @(message: String)
 @scripts =  {
-    <script type="text/javascript">
+<script type="text/javascript">
 
     website.controller('myCtrl', function($scope) {
 
@@ -8,40 +8,139 @@
             {
                   des: "@Messages("faq.des")",
                   url: "/faq",
+                  src: "https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_faq.svg",
                   className: "faq",
             },
             {
                   des: "@Messages("tutorial.des")",
-                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
-                  className: "tutorialvideo",
+                  url: "/tutorial",
+                  src: "https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_tutorail.svg",
+                  className: "tutorial",
             },
             {
                   des: "@Messages("download.des")",
                   url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
-                  className: "documentdownload",
+                  src: "https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_download.svg",
+                  className: "tutorial",
             },
             {
                   des: "@Messages("warranty.des")",
                   url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
-                  className: "productwarranty",
-            }
+                  src: "https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_warranty.svg",
+                  className: "tutorial",
+            },
+
         ];
-        $scope.buttons = [
+        $scope.register = [
             {
                  des: "@Messages("register.des")",
                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
-                 className: "button",
+                 src: "https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_regiester.svg",
+                 className: "glyphicon glyphicon-screenshot register",
             },
+
+        ];
+        $scope.contact = [
+
             {
                  des: "@Messages("contact.des")",
                  url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
-                 className: "button",
+                 src: "https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_contact.svg",
+                 className: "glyphicon glyphicon-qrcode contact",
             }
         ];
+
+        $scope.productCate1 = [
+
+            {
+                 des: "Product 01",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dv10pro_m.png",
+
+            },
+            {
+                 des: "Product 02",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dvjrw_m.png",
+
+            },
+            {
+                 des: "Product 03",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dvjr_m.png",
+
+            },
+            {
+                 des: "Product 04",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_scanner_m.png",
+
+            },
+            {
+                 des: "Product 05",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dv10aio_m.png",
+
+            },
+            {
+                 des: "Product 06",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dv20a_m.png",
+
+            },
+             {
+                 des: "Product 01",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dv10pro_m.png",
+
+            },
+            {
+                 des: "Product 02",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dvjrw_m.png",
+
+            },
+        ];
+         $scope.productCate2 = [
+            {
+                 des: "Product 04",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_scanner_m.png",
+
+            },
+         ];
+          $scope.productCate3 = [
+
+           {
+                 des: "Product 02",
+                 url: "http://support.xyzprinting.com/jp_ja/Help/Faq",
+                 src: "http://twportal.blob.core.windows.net/images-website/category/bg_product_cate_dvjrw_m.png",
+
+            },
+         ];
     });
+
+
 
     </script>
 
+<script>
+
+    $(document).ready(function(){
+    //on close collapse
+         $('.collapse').on('hidden.bs.collapse', function () {
+              var target = '#'+$(this).attr('data-parent');
+              $(target).removeClass('collapse-open');
+         });
+
+    //on open collapse
+        $('.collapse').on('shown.bs.collapse', function () {
+          var target = '#'+$(this).attr('data-parent');
+          $(target).addClass('collapse-open');
+        });
+
+    });
+</script>
 }
 @main("Service Center 2.0", scripts) {
 <div class="serviceCate" ng-controller="myCtrl"><center>
@@ -56,7 +155,7 @@
 
     <div class="container">
 
-        <section class="row col-md-12 heading">
+        <section class="row col-md-12 heading h2" id="generalCategory">
             <span>@Messages("Service.Center")</span>
             <div class="clear"> </div>
         </section>
@@ -64,28 +163,190 @@
         <section class="sub-cate">
             <div class="row">
                 <div ng-repeat="item in serviceHome" class="col-xs-6 col-md-3" ng-cloak>
-                    <div class="{{item.className}}"></div>
-                    <a ng-href="{{item.url}}">
-                        <p ng-bind="item.des"></p>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div ng-repeat="item in buttons" class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="{{item.className}}">
-                        <ul>
-                            <li class="bilog"></li>
-                            <li class="msg">
-                                <a ng-href="{{item.url}}">
-                                    <span ng-bind="item.des"></span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="circle" class="{{item.className}}">
+                        <div data-toggle="collapse" data-target="#productcate">
+                            <a href="#productcate"><img ng-src="{{item.src}}">
+                            <p ng-bind="item.des"></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br>
+            <div class="row">
+                <div ng-repeat="item in register" class="col-xs-12 col-sm-6 col-md-3 col-md-offset-3">
+                    <div class="circle">
+                        <div  data-toggle="collapse" data-target="#productcate">
+                            <img ng-src="{{item.src}}">
+                            <p ng-bind="item.des"></p>
+                        </div>
+                    </div>
+                </div>
+                <div ng-repeat="item in contact" class="col-xs-12 col-sm-6 col-md-3 col-md-offset-0">
+                    <div class="circle">
+                        <div  data-toggle="collapse" data-target="#productcate">
+                            <img ng-src="{{item.src}}">
+                            <p ng-bind="item.des"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
-        
+
+        <section id="productcate" class="collapse">
+            <div class="row col-md-12 col-sm-12 col-xs-12">
+                <p class="head h3">Selecting a Product</p>
+            </div>
+            <div class="clear"></div>
+
+            <div class="panel-group" id="accordion">
+                <!--Accordion Type 1-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                <span class="glyphicon glyphicon-plus"></span> Product Type 01
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul class="nav nav-pills col-md-12">
+                                <li class="active"><a data-toggle="pill" href="#home1">cate01</a></li>
+                                <li><a data-toggle="pill" href="#menu1">cate02</a></li>
+                                <li><a data-toggle="pill" href="#menu2">cate03</a></li>
+                            </ul>
+                            <div class="tab-content container">
+                                <div id="home1" class="tab-pane fade in active">
+                                    <div ng-repeat="item in productCate1" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="clearcate"></div>
+                                        <a ng-href="{{item.url}}">
+                                        <div class="cateCircle">
+                                                <img ng-src="{{item.src}}">
+                                            </div>
+                                            <div ng-bind="item.des" class="clearcate"></div>
+                                        </a>
+                                        </div>
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                    <div ng-repeat="item in productCate2" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="clearcate"></div>
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
+                                    </div>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                    <div ng-repeat="item in productCate3" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="clearcate"></div>
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Accordion type 2-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <span class="glyphicon glyphicon-plus"></span> Product Type 02
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <ul class="nav nav-pills center">
+                                <li class="active"><a data-toggle="pill" href="#home2">cate01</a></li>
+                                <li><a data-toggle="pill" href="#menu21">cate02</a></li>
+                                <li><a data-toggle="pill" href="#menu22">cate03</a></li>
+                            </ul>
+                            <div class="tab-content container">
+                                <div id="home2" class="tab-pane fade in active">
+                                    <div ng-repeat="item in productCate1" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des"></div>
+                                    </div>
+                                </div>
+                                <div id="menu21" class="tab-pane fade">
+                                    <div ng-repeat="item in productCate2" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des"></div>
+                                    </div>
+                                </div>
+                                <div id="menu22" class="tab-pane fade">
+                                    <div ng-repeat="item in productCate3" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Accordion type 3-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <span class="glyphicon glyphicon-plus"></span> Product Type 03
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                            <ul class="nav nav-pills center">
+                                <li class="active"><a data-toggle="pill" href="#home3">cate01</a></li>
+                                <li><a data-toggle="pill" href="#menu31">cate02</a></li>
+                                <li><a data-toggle="pill" href="#menu32">cate03</a></li>
+                            </ul>
+                            <div class="tab-content container">
+                                <div id="home3" class="tab-pane fade in active">
+                                    <div ng-repeat="item in productCate1" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des"></div>
+                                    </div>
+                                </div>
+                                <div id="menu31" class="tab-pane fade">
+                                    <div ng-repeat="item in productCate2" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des"></div>
+                                    </div>
+                                </div>
+                                <div id="menu32" class="tab-pane fade">
+                                    <div ng-repeat="item in productCate3" class="row col-md-3 col-sm-10 col-xs-10">
+                                        <div class="cateCircle">
+                                            <img ng-src="{{item.src}}">
+                                        </div>
+                                        <div ng-bind="item.des"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </div>
 </center>
 </div>
