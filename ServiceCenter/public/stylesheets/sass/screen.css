@@ -330,196 +330,290 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .serviceCate #productcate .head {
   color: #45A9DA;
 }
-/* line 54, ../../sass/sass/_home.scss */
+/* line 53, ../../sass/sass/_home.scss */
+.serviceCate #productcate .panel-title {
+  font-size: 20px;
+}
+/* line 55, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-title a {
   color: #3fb1e7;
 }
-/* line 56, ../../sass/sass/_home.scss */
+/* line 57, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-title a:hover {
   color: #00a99d;
 }
-/* line 59, ../../sass/sass/_home.scss */
+/* line 60, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-title a:active {
   color: #3fb1e7;
 }
-/* line 65, ../../sass/sass/_home.scss */
+/* line 66, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body {
   background-color: #f5f5f5;
   border-top: 0px !important;
 }
-/* line 68, ../../sass/sass/_home.scss */
+/* line 69, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body .nav {
   padding-left: 38% !important;
 }
-/* line 71, ../../sass/sass/_home.scss */
+@media (max-width: 1024px) {
+  /* line 69, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .panel-body .nav {
+    padding-left: 30% !important;
+  }
+}
+@media (max-width: 480px) {
+  /* line 69, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .panel-body .nav {
+    padding-left: 15% !important;
+  }
+  /* line 76, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .panel-body .nav img {
+    width: 75px;
+    height: 75px;
+  }
+}
+/* line 82, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body .nav li {
   background-color: #546679;
 }
-/* line 73, ../../sass/sass/_home.scss */
+/* line 84, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body .nav li a {
   color: #fff !important;
 }
-/* line 75, ../../sass/sass/_home.scss */
+/* line 86, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body .nav li a:hover {
   background-color: #00a99d;
 }
-/* line 83, ../../sass/sass/_home.scss */
+/* line 94, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body .nav-pills > li.active > a {
   background-color: #fff !important;
   border: 1px solid #35404c;
   border-radius: 0px;
   color: #3fb1e7 !important;
 }
-/* line 88, ../../sass/sass/_home.scss */
+/* line 99, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-body .nav-pills > li.active > a:hover {
   background-color: #00a99d !important;
   color: #fff !important;
 }
-/* line 95, ../../sass/sass/_home.scss */
+/* line 106, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-default {
   border-color: #f5f5f5;
 }
-/* line 98, ../../sass/sass/_home.scss */
+/* line 109, ../../sass/sass/_home.scss */
 .serviceCate #productcate .panel-heading {
   border-color: rgba(255, 255, 255, 0);
 }
-/* line 102, ../../sass/sass/_home.scss */
+/* line 113, ../../sass/sass/_home.scss */
 .serviceCate #productcate .clearcate {
   margin: 20px;
 }
-/* line 105, ../../sass/sass/_home.scss */
+/* line 116, ../../sass/sass/_home.scss */
 .serviceCate #productcate .cateCircle {
   border-radius: 50%;
   width: 230px;
   height: 230px;
-  background: rgba(232, 233, 235, 0.6);
 }
-/* line 110, ../../sass/sass/_home.scss */
+@media (max-width: 1024px) {
+  /* line 116, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .cateCircle {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 116, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .cateCircle {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* line 129, ../../sass/sass/_home.scss */
 .serviceCate #productcate .cateCircle img {
   margin-top: 20px;
 }
+@media (max-width: 1024px) {
+  /* line 129, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .cateCircle img {
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 129, ../../sass/sass/_home.scss */
+  .serviceCate #productcate .cateCircle img {
+    width: 150px;
+  }
+}
 
-/* line 121, ../../sass/sass/_home.scss */
+/* line 146, ../../sass/sass/_home.scss */
 .pointer {
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
-  /* line 128, ../../sass/sass/_home.scss */
-  .button {
-    width: 300px;
-    height: 75px;
-    background-color: white;
-    margin: 20px 0px;
+@media (max-width: 1024px) {
+  /* line 154, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate {
+    width: 100%;
+    min-height: 900px;
+  }
+  /* line 157, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate p {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+  }
+  /* line 163, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate .circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: rgba(84, 102, 121, 0.6);
+  }
+  /* line 168, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate .circle:hover {
+    background: rgba(84, 102, 121, 0.9);
     border: 2px solid #C3C3C3;
-    margin-top: 10px;
-    border-radius: 10px;
   }
-  /* line 136, ../../sass/sass/_home.scss */
-  .button li {
-    float: left;
-  }
-  /* line 140, ../../sass/sass/_home.scss */
-  .button .msg {
-    margin: 25px 5px;
-    font-size: 18px;
+  /* line 172, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate .circle img {
+    width: 75px;
+    height: 75px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 480px) {
-  /* line 151, ../../sass/sass/_home.scss */
-  .serviceCate p {
-    padding: 20px;
-    font-size: 14px;
-  }
-  /* line 155, ../../sass/sass/_home.scss */
-  .serviceCate li {
-    float: left;
-    margin: 10px;
-  }
-  /* line 159, ../../sass/sass/_home.scss */
-  .serviceCate .circle {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: #546679;
-  }
-  /* line 165, ../../sass/sass/_home.scss */
-  .serviceCate .faq {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-  }
-  /* line 171, ../../sass/sass/_home.scss */
-  .serviceCate .tutorialvideo {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-  }
-  /* line 178, ../../sass/sass/_home.scss */
-  .serviceCate .documentdownload {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: #05FEF6;
-  }
-  /* line 184, ../../sass/sass/_home.scss */
-  .serviceCate .productwarranty {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: #08F813;
+  /* line 188, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate {
+    width: 100%;
+    min-height: 400px;
   }
   /* line 191, ../../sass/sass/_home.scss */
-  .serviceCate .button {
-    width: 275px;
-    height: 50px;
-    background-color: white;
-    margin: 10px 0px;
-    border: 2px solid #C3C3C3;
-    border-radius: 10px;
+  .serviceCate .sub-cate p {
+    padding: 15px;
+    font-size: 16px;
+    color: white;
   }
   /* line 198, ../../sass/sass/_home.scss */
-  .serviceCate .button .bilog {
-    margin: 3px 10px 0px 20px;
+  .serviceCate .sub-cate .circle {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: #34495E;
+    width: 150px;
+    height: 150px;
+    background: rgba(84, 102, 121, 0.6);
   }
-  /* line 205, ../../sass/sass/_home.scss */
-  .serviceCate .button li {
-    float: left;
+  /* line 203, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate .circle:hover {
+    background: rgba(84, 102, 121, 0.9);
+    border: 2px solid #C3C3C3;
   }
-  /* line 209, ../../sass/sass/_home.scss */
-  .serviceCate .button .msg {
-    margin: 13px 5px;
-    font-size: 16px;
+  /* line 207, ../../sass/sass/_home.scss */
+  .serviceCate .sub-cate .circle img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
   }
-  /* line 215, ../../sass/sass/_home.scss */
-  .serviceCate p {
-    padding: 20px;
-    font-size: 15px;
-    text-align: center;
-  }
-  /* line 220, ../../sass/sass/_home.scss */
+  /* line 217, ../../sass/sass/_home.scss */
   .serviceCate .logo {
     height: 100px;
     width: 60px;
   }
 }
-/* line 4, ../../sass/sass/_faq.scss */
+/*
+    FAQ Section
+*/
+/* line 7, ../../sass/sass/_faq.scss */
+.faqSection .list li {
+  float: left;
+}
+/* line 10, ../../sass/sass/_faq.scss */
+.faqSection .list li:nth-child(2) {
+  margin: 47px 5px;
+}
+/* line 16, ../../sass/sass/_faq.scss */
 .faqSection .verticalHead li {
-  width: 200px;
+  width: 250px;
   height: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0) !important;
   margin: 20px 0px;
   border: 2px solid #C3C3C3;
   border-radius: 30px;
   padding: 20px 30px;
   font-size: 16px;
   font-weight: bold;
+  color: #3fb1e7;
+}
+/* line 31, ../../sass/sass/_faq.scss */
+.faqSection .nav {
+  padding: 0px;
+}
+/* line 34, ../../sass/sass/_faq.scss */
+.faqSection .nav li {
+  width: 200px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  margin: 20px 0px;
+  border: 2px solid #C3C3C3;
+  border-radius: 30px;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 48, ../../sass/sass/_faq.scss */
+.faqSection .nav-pills li.active > a {
+  background-color: rgba(255, 255, 255, 0) !important;
+  color: pink;
+}
+/* line 51, ../../sass/sass/_faq.scss */
+.faqSection .nav-pills li.active > a:hover {
+  color: red;
+}
+/* line 55, ../../sass/sass/_faq.scss */
+.faqSection .nav-pills li > a {
+  color: #fff;
+}
+/* line 57, ../../sass/sass/_faq.scss */
+.faqSection .nav-pills li > a:hover {
+  color: green;
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+/* line 64, ../../sass/sass/_faq.scss */
+.faqSection .panel-heading {
+  background-color: #35404c;
+}
+/* line 66, ../../sass/sass/_faq.scss */
+.faqSection .panel-heading .panel-title {
+  color: #fff;
+}
+/* line 70, ../../sass/sass/_faq.scss */
+.faqSection .panel-body {
+  background-color: #546679;
+  border: 0px !important;
+  color: #fff;
+}
+/* line 75, ../../sass/sass/_faq.scss */
+.faqSection .panel-default {
+  border: 0px !important;
+}
+/* line 79, ../../sass/sass/_faq.scss */
+.faqSection .circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: white;
+}
+/* line 84, ../../sass/sass/_faq.scss */
+.faqSection .circle:hover {
+  background: rgba(84, 102, 121, 0.9);
+  border: 2px solid #C3C3C3;
+}
+/* line 88, ../../sass/sass/_faq.scss */
+.faqSection .circle img {
+  width: 75px;
+  height: 75px;
+  margin-top: 12px;
+}
+/* line 94, ../../sass/sass/_faq.scss */
+.faqSection .circle span {
+  margin-top: 10px;
 }
 
 /* line 1, ../../sass/sass/_iconfont.scss */
@@ -1116,4 +1210,112 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .downloadSection .container .rightPart .osList .panel-group .panel-body ul li {
     padding: 10px 0px 10px 0px;
   }
+}
+/* line 3, ../../sass/sass/_helpCate.scss */
+#helpList.scanner {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_scanner.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 8, ../../sass/sass/_helpCate.scss */
+#helpList.f10 {
+  background: url("https://xyzwebsite.blob.core.windows.net/service-center/da10.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 13, ../../sass/sass/_helpCate.scss */
+#helpList.f20 {
+  background: url("https://xyzwebsite.blob.core.windows.net/service-center/da20.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 18, ../../sass/sass/_helpCate.scss */
+#helpList.f10a {
+  background: url("https://xyzwebsite.blob.core.windows.net/service-center/da10a.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 23, ../../sass/sass/_helpCate.scss */
+#helpList.f20a {
+  background: url("https://xyzwebsite.blob.core.windows.net/service-center/da20a.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 28, ../../sass/sass/_helpCate.scss */
+#helpList.f10aio {
+  background: url("https://xyzwebsite.blob.core.windows.net/service-center/daAiO.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 33, ../../sass/sass/_helpCate.scss */
+#helpList.nb10 {
+  background: url("http://twportal.blob.core.windows.net/images-support/img_support_navi_nb10.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 38, ../../sass/sass/_helpCate.scss */
+#helpList.filament {
+  background: url("http://twportal.blob.core.windows.net/images-support/img_support_navi_filament.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 43, ../../sass/sass/_helpCate.scss */
+#helpList.spare_parts {
+  background: url("http://twportal.blob.core.windows.net/images-support/img_support_navi_spare.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 48, ../../sass/sass/_helpCate.scss */
+#helpList.nb10 {
+  background: url("http://twportal.blob.core.windows.net/images-support/img_support_navi_nb10.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 53, ../../sass/sass/_helpCate.scss */
+#helpList.dv10jr {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_dv10jr.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 58, ../../sass/sass/_helpCate.scss */
+#helpList.dv11plus {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_dv11plus.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 63, ../../sass/sass/_helpCate.scss */
+#helpList.dv10jrw {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_dvjrw.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 68, ../../sass/sass/_helpCate.scss */
+#helpList.dvpro {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_dv10pro.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 73, ../../sass/sass/_helpCate.scss */
+#helpList.foodprinter {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_foodprinter.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 78, ../../sass/sass/_helpCate.scss */
+#helpList.bolide {
+  background: url("https://twportal.blob.core.windows.net/images-support/bolide_robot.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 85%;
+  background-position: 50% 50%;
+}
+/* line 83, ../../sass/sass/_helpCate.scss */
+#helpList.xyzmaker {
+  background: url("https://xyzwebsite.blob.core.windows.net/service-center/ic_xyzmaker.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
+}
+/* line 88, ../../sass/sass/_helpCate.scss */
+#helpList.dvpro3in1 {
+  background: url("https://twportal.blob.core.windows.net/images-support/img_support_navi_dv3in1pro.png") no-repeat rgba(232, 233, 235, 0.6);
+  background-size: 100%;
+  background-position: 50% 50%;
 }

@@ -3,7 +3,8 @@
 # ~~~~
 
 # Home page
-GET     /                              controllers.Application.index()
+GET     /                              controllers.Application.home()
+GET     /:region/Help                  controllers.Application.index(region: String)
 GET     /faq                           controllers.Application.faq()
 GET     /tutorial                      controllers.Application.tutorial()
 GET     /download                      controllers.Application.download()

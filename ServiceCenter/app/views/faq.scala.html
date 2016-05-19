@@ -1,18 +1,25 @@
 @(message: String)
 @scripts =  {
-
-
 }
 
 @main("Service Center 2.0 FAQ", scripts) {
 <div class="faqSection">
     <div class="container">
-        <section class="row col-md-12 text-center heading">
-            <span>FAQ</span>
+        <section class="row col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 text-center heading">
+                <ul class="list">
+                    <li class="circle"><img src="https://twportal.blob.core.windows.net/images-servicecenter/general/ic_cate_faq.svg"></li>
+                    <li class="child">FAQ</li>
+                </ul>
         </section>
         <div class="clear"></div>
 
         <section class="row col-md-3 verticalHead text-center">
+            <!--<ul class="nav nav-pills nav-stacked col-md-12">
+                <li class="active"><a data-toggle="pill" href="#home1">FAQ category 01</a></li>
+                <li><a data-toggle="pill" href="#menu1">FAQ category 02 in two line</a></li>
+                <li><a data-toggle="pill" href="#menu2">FAQ category 03 in two line</a></li>
+                <li><a data-toggle="pill" href="#menu2">FAQ category 04</a></li>
+            </ul>-->
             <ul>
                 <li>FAQ category 01</li>
                 <li>FAQ category 02 in two line</li>
@@ -21,7 +28,7 @@
             </ul>
         </section>
 
-        <section class="row col-md-9">
+        <section class="row col-md-8 col-md-offset-1">
             <div class="col-md-12 text-left heading">FAQ category 01</div>
             <div class="clear"></div>
             <div class="panel-group" id="accordion">

@@ -1,18 +1,105 @@
+/*
+    FAQ Section
+*/
+
 .faqSection{
+    .list {
+        li{
+            float: left;
+        }
+        li:nth-child(2) {
+          margin: 47px 5px;
+        }
+    }
 
     .verticalHead{
         li{
-            width: 200px;
+            width: 250px;
         	height: 100%;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0) !important;
             margin: 20px 0px;
             border: 2px solid #C3C3C3;
             border-radius: 30px;
             padding: 20px 30px;
             font-size: 16px;
             font-weight: bold;
+            color: #3fb1e7;
         }
 
     }
 
+    .nav{
+        padding: 0px;
+
+        li{
+                    width: 200px;
+                	height: 100%;
+                    background-color: rgba(255, 255, 255, 0.1) !important;
+                    margin: 20px 0px;
+                    border: 2px solid #C3C3C3;
+                    border-radius: 30px;
+                    padding: 20px 30px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+    }
+    .nav-pills
+            {
+            li.active>a{
+             background-color: rgba(255, 255, 255, 0) !important;
+            color: pink;
+                &:hover{
+                    color: red;
+                }
+            }
+            li>a{
+                color: $white;
+                &:hover{
+                color: green;
+                     background-color: rgba(255, 255, 255, 0) !important;
+                }
+            }
+    }
+
+        .panel-heading{
+            background-color: #35404c;
+            .panel-title{
+                color: $white;
+            }
+        }
+        .panel-body{
+                    background-color: #546679;
+                    border: 0px !important;
+                    color: $white;
+                }
+        .panel-default{
+                    border: 0px !important;
+        }
+
+        .circle {
+                	border-radius: 50%;
+                	width: 100px;
+                	height: 100px;
+                	background: rgba($white, 1);
+                	&:hover {
+                          background: rgba(84, 102, 121, 0.9);
+                          border: 2px solid #C3C3C3;
+                                    }
+                	img{
+                	    width: 75px;
+                	    height: 75px;
+                	    margin-top: 12px;
+
+                	}
+                	span{
+                	    margin-top: 10px;
+                	}
+
+
+
+        }
+
+
+
 }
+

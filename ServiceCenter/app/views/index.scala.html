@@ -1,8 +1,13 @@
-@(message: String)
+@(productList: String)
 @scripts =  {
 <script type="text/javascript">
 
+
     website.controller('myCtrl', function($scope) {
+        var productList = JSON.parse('@Html(productList)');
+         console.log(productList);
+        //this.items = productList;
+        $scope.prodList = productList;
 
         $scope.serviceHome = [
             {
@@ -127,6 +132,10 @@
 <script>
 
     $(document).ready(function(){
+    //alert("@productList");
+    //var parseProductList = "@productList";
+    //alert(menuItems);
+
     //on close collapse
          $('.collapse').on('hidden.bs.collapse', function () {
               var target = '#'+$(this).attr('data-parent');
@@ -139,7 +148,12 @@
           $(target).addClass('collapse-open');
         });
 
+
+
     });
+
+
+
 </script>
 }
 @main("Service Center 2.0", scripts) {
@@ -166,15 +180,17 @@
                     <div class="circle" class="{{item.className}}">
                         <div data-toggle="collapse" data-target="#productcate">
                             <a href="#productcate"><img ng-src="{{item.src}}">
-                            <p ng-bind="item.des"></p>
+                                <p ng-bind="item.des"></p>
                             </a>
                         </div>
                     </div>
+                    <br><br>
                 </div>
             </div>
-            <br>
+            <div id="testJson"></div>
+
             <div class="row">
-                <div ng-repeat="item in register" class="col-xs-12 col-sm-6 col-md-3 col-md-offset-3">
+                <div ng-repeat="item in register" class="col-xs-6 col-md-3 col-md-offset-3">
                     <div class="circle">
                         <div  data-toggle="collapse" data-target="#productcate">
                             <img ng-src="{{item.src}}">
@@ -182,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div ng-repeat="item in contact" class="col-xs-12 col-sm-6 col-md-3 col-md-offset-0">
+                <div ng-repeat="item in contact" class="col-xs-6 col-md-3 col-md-offset-0">
                     <div class="circle">
                         <div  data-toggle="collapse" data-target="#productcate">
                             <img ng-src="{{item.src}}">
@@ -195,7 +211,7 @@
         </section>
 
         <section id="productcate" class="collapse">
-            <div class="row col-md-12 col-sm-12 col-xs-12">
+            <div class="row-fluid col-md-12 col-sm-12 col-xs-12">
                 <p class="head h3">Selecting a Product</p>
             </div>
             <div class="clear"></div>
@@ -206,7 +222,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                <span class="glyphicon glyphicon-plus"></span> Product Type 01
+                                <span id="gly" class="glyphicon glyphicon-plus"></span> Product Type 01
                             </a>
                         </h4>
                     </div>
@@ -217,20 +233,32 @@
                                 <li><a data-toggle="pill" href="#menu1">cate02</a></li>
                                 <li><a data-toggle="pill" href="#menu2">cate03</a></li>
                             </ul>
-                            <div class="tab-content container">
+                            <div class="tab-content">
                                 <div id="home1" class="tab-pane fade in active">
-                                    <div ng-repeat="item in productCate1" class="row col-md-3 col-sm-10 col-xs-10">
-                                        <div class="clearcate"></div>
-                                        <a ng-href="{{item.url}}">
-                                        <div class="cateCircle">
-                                                <img ng-src="{{item.src}}">
-                                            </div>
-                                            <div ng-bind="item.des" class="clearcate"></div>
-                                        </a>
+                                    <!-- Data from database -->
+                                    <div class="row col-md 12">
+                                        <div ng-repeat="item in prodList" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+
+                                            <div class="clearcate"></div>
+
+                                            <!--<div class="{{item.productCode}}">
+                                             -<p ng-bind="item.productCode"></p>
+                                             <p ng-bind="item.productName"></p>
+                                              <p ng-bind="item.productType"></p>
+                                            </div> -->
+
+                                            <a ng-href="/{lang}/Help/Faq?product={{item.productCode}}&productName={{item.productName}}">
+                                                <div id="helpList" class="{{item.productCode}} cateCircle"></div>
+                                                <div ng-bind="item.productName" class="clearcate"> </div>
+                                            </a>
+
                                         </div>
+                                    </div>
+                                    <!-- Data from database ends -->
+
                                 </div>
                                 <div id="menu1" class="tab-pane fade">
-                                    <div ng-repeat="item in productCate2" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate2" class="row-fluid col-md-3 col-sm-6 col-xs-6">
                                         <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
@@ -239,7 +267,7 @@
                                     </div>
                                 </div>
                                 <div id="menu2" class="tab-pane fade">
-                                    <div ng-repeat="item in productCate3" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate3" class="row-fluid col-md-3 col-sm-6 col-xs-6">
                                         <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
@@ -268,29 +296,32 @@
                                 <li><a data-toggle="pill" href="#menu21">cate02</a></li>
                                 <li><a data-toggle="pill" href="#menu22">cate03</a></li>
                             </ul>
-                            <div class="tab-content container">
+                            <div class="tab-content">
                                 <div id="home2" class="tab-pane fade in active">
-                                    <div ng-repeat="item in productCate1" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate1" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+                                        <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
                                         </div>
-                                        <div ng-bind="item.des"></div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
                                     </div>
                                 </div>
                                 <div id="menu21" class="tab-pane fade">
-                                    <div ng-repeat="item in productCate2" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate2" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+                                        <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
                                         </div>
-                                        <div ng-bind="item.des"></div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
                                     </div>
                                 </div>
                                 <div id="menu22" class="tab-pane fade">
-                                    <div ng-repeat="item in productCate3" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate3" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+                                        <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
                                         </div>
-                                        <div ng-bind="item.des"></div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
                                     </div>
                                 </div>
                             </div>
@@ -314,29 +345,32 @@
                                 <li><a data-toggle="pill" href="#menu31">cate02</a></li>
                                 <li><a data-toggle="pill" href="#menu32">cate03</a></li>
                             </ul>
-                            <div class="tab-content container">
+                            <div class="tab-content">
                                 <div id="home3" class="tab-pane fade in active">
-                                    <div ng-repeat="item in productCate1" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate1" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+                                        <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
                                         </div>
-                                        <div ng-bind="item.des"></div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
                                     </div>
                                 </div>
                                 <div id="menu31" class="tab-pane fade">
-                                    <div ng-repeat="item in productCate2" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate2" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+                                        <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
                                         </div>
-                                        <div ng-bind="item.des"></div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
                                     </div>
                                 </div>
                                 <div id="menu32" class="tab-pane fade">
-                                    <div ng-repeat="item in productCate3" class="row col-md-3 col-sm-10 col-xs-10">
+                                    <div ng-repeat="item in productCate3" class="row-fluid col-md-3 col-sm-6 col-xs-6">
+                                        <div class="clearcate"></div>
                                         <div class="cateCircle">
                                             <img ng-src="{{item.src}}">
                                         </div>
-                                        <div ng-bind="item.des"></div>
+                                        <div ng-bind="item.des" class="clearcate"></div>
                                     </div>
                                 </div>
                             </div>
